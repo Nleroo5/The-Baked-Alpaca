@@ -895,8 +895,8 @@ main {
     text-align: center !important;
   }
 
-  /* Images full width and centered */
-  [style*="grid-template-columns"] img {
+  /* Images full width and centered - EXCEPT hero logo images */
+  [style*="grid-template-columns"] img:not(.hero-logo-img):not([src*="header-logo"]) {
     max-width: 100% !important;
     margin-left: auto !important;
     margin-right: auto !important;
@@ -913,8 +913,8 @@ main {
     transform: scale(1) !important;
   }
 
-  /* Ensure images in grid layouts are properly sized */
-  [style*="grid-template-columns"] div img {
+  /* Ensure images in grid layouts are properly sized - EXCEPT hero logo images */
+  [style*="grid-template-columns"] div img:not(.hero-logo-img):not([src*="header-logo"]) {
     width: 100% !important;
     height: auto !important;
   }
