@@ -226,11 +226,22 @@ a:hover {
   padding: var(--space-12) 0 var(--space-6);
 }
 
-.footer-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-8);
-  margin-bottom: var(--space-8);
+/* Desktop footer grid - ONLY above 768px */
+@media (min-width: 769px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-8);
+    margin-bottom: var(--space-8);
+  }
+}
+
+/* Mobile footer - default stacked layout */
+@media (max-width: 768px) {
+  .footer-content {
+    display: block;
+    margin-bottom: var(--space-4);
+  }
 }
 
 .footer-section h3 {
