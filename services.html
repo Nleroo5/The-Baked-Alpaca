@@ -399,66 +399,69 @@
   <script src="/js/main.js"></script>
 
   <style>
-    /* Responsive adjustments for Services page */
+    /* Services page mobile - CLEAN SIMPLE VERSION */
     @media (max-width: 768px) {
-      /* Target all grid layouts on mobile - use flexbox for reordering */
-      section > .container > div[style*="grid-template-columns"] {
+      /* HIDE HERO LOGO */
+      .hero .hero-logo-img {
+        display: none !important;
+      }
+
+      /* Service sections: stack vertically, photo above text */
+      section#pastries .container > div,
+      section#custom-cakes .container > div,
+      section#entremets .container > div,
+      section#dessert-tables .container > div,
+      section#weddings .container > div {
         display: flex !important;
         flex-direction: column !important;
       }
 
-      section > .container > div[style*="grid-template-columns"] > div {
-        margin-bottom: var(--space-6);
-        text-align: center !important;
+      /* Reverse sections where text comes first on desktop */
+      section#custom-cakes .container > div,
+      section#dessert-tables .container > div {
+        flex-direction: column-reverse !important;
       }
 
-      section > .container > div[style*="grid-template-columns"] > div:last-child {
-        margin-bottom: 0;
-      }
-
-      /* Ensure all images are full width on mobile - EXCEPT hero logos */
-      section > .container > div[style*="grid-template-columns"] img:not(.hero-logo-img):not([src*="header-logo"]) {
+      /* All divs in service sections - centered */
+      section#pastries .container > div > div,
+      section#custom-cakes .container > div > div,
+      section#entremets .container > div > div,
+      section#dessert-tables .container > div > div,
+      section#weddings .container > div > div {
         width: 100% !important;
+        text-align: center !important;
+        margin-bottom: var(--space-6) !important;
+      }
+
+      /* Images full width */
+      section#pastries img,
+      section#custom-cakes img,
+      section#entremets img,
+      section#dessert-tables img,
+      section#weddings img {
+        width: 100% !important;
+        max-width: 100% !important;
         transform: none !important;
       }
 
-      /* HIDE hero logo on mobile */
-      section.hero img[src*="header-logo"],
-      .hero-logo-img {
-        display: none !important;
-        visibility: hidden !important;
-        opacity: 0 !important;
-      }
-
-      /* Reverse order for sections where text comes before image on desktop */
-      /* Custom Cakes section - text is first child, image is second */
-      section#custom-cakes > .container > div[style*="grid-template-columns: 1fr 1.5fr"] {
-        flex-direction: column-reverse !important;
-      }
-
-      /* Dessert Tables section - text is first child, image is second */
-      section#dessert-tables > .container > div[style*="grid-template-columns: 1fr 2fr"] {
-        flex-direction: column-reverse !important;
-      }
-
-      /* Center all text content on services page mobile */
-      section .container h2,
-      section .container h3,
-      section .container p,
-      section .container ul,
-      section .container .btn {
+      /* Center all text */
+      section h2,
+      section h3,
+      section p,
+      section ul {
         text-align: center !important;
       }
 
-      /* Center list items */
-      section .container ul {
+      /* Lists centered */
+      section ul {
         list-style-position: inside !important;
         padding-left: 0 !important;
       }
 
-      /* Center buttons */
-      section .container .btn {
+      /* Buttons centered */
+      section .btn {
         display: inline-block !important;
+        margin: 0 auto !important;
       }
     }
   </style>
