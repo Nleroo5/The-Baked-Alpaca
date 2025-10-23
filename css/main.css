@@ -1021,6 +1021,11 @@ main {
   .testimonials-grid {
     grid-template-columns: 1fr !important;
   }
+
+  /* Hide hero logo image on mobile */
+  .hero-logo-img {
+    display: none !important;
+  }
 }
 
 /* ==================== */
