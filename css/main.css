@@ -945,9 +945,26 @@ main {
   }
 }
 
-/* Hide social-links-mobile on desktop */
+/* Social links - show on both desktop and mobile, side by side */
 .social-links-mobile {
-  display: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-links-mobile .social-link {
+  display: inline-flex;
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.social-links-mobile .social-link:hover {
+  opacity: 0.7;
 }
 
 /* Typography Responsive */
