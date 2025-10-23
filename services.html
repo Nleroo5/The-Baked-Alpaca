@@ -416,10 +416,18 @@
         margin-bottom: 0;
       }
 
-      /* Ensure all images are full width on mobile */
-      section > .container > div[style*="grid-template-columns"] img {
+      /* Ensure all images are full width on mobile - EXCEPT hero logos */
+      section > .container > div[style*="grid-template-columns"] img:not(.hero-logo-img):not([src*="header-logo"]) {
         width: 100% !important;
         transform: none !important;
+      }
+
+      /* HIDE hero logo on mobile */
+      section.hero img[src*="header-logo"],
+      .hero-logo-img {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
       }
 
       /* Reverse order for sections where text comes before image on desktop */

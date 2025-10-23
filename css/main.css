@@ -1195,3 +1195,33 @@ main {
   }
 }
 
+/* ========================================= */
+/* FINAL NUCLEAR OPTION - HIDE HERO LOGOS */
+/* THIS MUST BE THE LAST RULE IN THE FILE */
+/* ========================================= */
+@media only screen and (max-width: 768px) {
+  /* Maximum specificity selectors for hero logo images */
+  section.hero img.hero-logo-img[src*="header-logo"],
+  .hero img[src*="header-logo"].hero-logo-img,
+  section.hero > img[src*="header-logo"],
+  .hero > img.hero-logo-img,
+  section[class*="hero"] img[src*="header-logo"],
+  img.hero-logo-img,
+  img[src*="header-logo.png"] {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    max-width: 0 !important;
+    max-height: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+    top: -9999px !important;
+    z-index: -9999 !important;
+    pointer-events: none !important;
+    clip: rect(0,0,0,0) !important;
+    overflow: hidden !important;
+  }
+}
+
