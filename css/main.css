@@ -1010,37 +1010,68 @@ main {
 /* MOBILE FOOTER - FRESH START */
 /* ========================================= */
 @media screen and (max-width: 768px) {
+  /* FORCE SINGLE COLUMN - Override desktop grid */
+  .footer-content {
+    display: block !important;
+    grid-template-columns: unset !important;
+  }
+
+  /* All footer sections full width */
+  .footer-content .footer-section {
+    width: 100% !important;
+    margin-bottom: 24px !important;
+  }
+
   /* Hide Quick Links on mobile */
-  footer .footer-content .footer-section:nth-child(2) {
+  .footer-content .footer-section:nth-child(2) {
     display: none !important;
   }
 
   /* Hide mobile social links */
-  footer .social-links-mobile {
+  .social-links-mobile {
     display: none !important;
   }
 
   /* Logo section - centered */
-  footer .footer-content .footer-section:first-child {
+  .footer-content .footer-section:first-child {
     text-align: center !important;
+    padding-bottom: 16px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
   }
 
-  footer .footer-content .footer-section:first-child img {
+  .footer-content .footer-section:first-child img {
     max-width: 120px !important;
     margin: 0 auto !important;
+    display: block !important;
   }
 
-  footer .footer-content .footer-section:first-child p {
+  .footer-content .footer-section:first-child p {
     display: none !important;
   }
 
-  footer .footer-content .footer-section:first-child .social-links {
+  .footer-content .footer-section:first-child .social-links {
     display: none !important;
   }
 
   /* Contact section - centered */
-  footer .footer-content .footer-section:last-child {
+  .footer-content .footer-section:last-child {
     text-align: center !important;
+  }
+
+  .footer-content .footer-section:last-child h3 {
+    font-size: 1rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  .footer-content .footer-section:last-child .contact-info {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .footer-content .footer-section:last-child .contact-item {
+    font-size: 0.75rem !important;
   }
 }
 
