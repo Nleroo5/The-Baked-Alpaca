@@ -237,7 +237,7 @@ a:hover {
 
   /* Shift Contact Us section slightly to the right */
   .footer-content .footer-section.footer-contact {
-    padding-left: var(--space-4);
+    padding-right: var(--space-4);
   }
 }
 
