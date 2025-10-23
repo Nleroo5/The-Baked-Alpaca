@@ -992,6 +992,18 @@ main {
   }
 }
 
+/* Hero logo image - desktop styles */
+.hero-logo-img {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
 /* Testimonials Responsive */
 @media (max-width: 768px) {
   .testimonials-grid {
@@ -1007,6 +1019,7 @@ main {
     opacity: 0 !important;
     width: 0 !important;
     height: 0 !important;
+    max-width: 0 !important;
     position: absolute !important;
     left: -9999px !important;
   }
