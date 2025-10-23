@@ -234,6 +234,11 @@ a:hover {
     gap: var(--space-8);
     margin-bottom: var(--space-8);
   }
+
+  /* Shift Contact Us section slightly to the right */
+  .footer-content .footer-section.footer-contact {
+    padding-left: var(--space-4);
+  }
 }
 
 /* Mobile footer - default stacked layout */
