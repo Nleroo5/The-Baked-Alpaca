@@ -230,14 +230,18 @@ a:hover {
 @media (min-width: 769px) {
   .footer-content {
     display: grid;
-    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: var(--space-8);
     margin-bottom: var(--space-8);
   }
 
-  /* Shift Contact Us section slightly to the right */
+  /* Align Contact Us to the right within its column */
   .footer-content .footer-section.footer-contact {
-    padding-left: var(--space-6);
+    text-align: right;
+  }
+
+  .footer-content .footer-section.footer-contact .contact-info {
+    align-items: flex-end;
   }
 }
 
