@@ -52,13 +52,6 @@
 
   <!-- Legal Pages -->
   <url>
-    <loc>https://www.thebakedalpaca.com/cookies.html</loc>
-    <lastmod>2025-01-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <url>
     <loc>https://www.thebakedalpaca.com/disclaimer.html</loc>
     <lastmod>2025-01-15</lastmod>
     <changefreq>yearly</changefreq>
