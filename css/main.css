@@ -930,73 +930,80 @@ main {
   }
 }
 
-/* Footer Responsive - Modified: 2-Column Layout */
+/* Footer Responsive - Mobile 2-Column Layout */
 @media (max-width: 768px) {
+  /* Main grid: 2 columns */
   .footer-content {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
-    gap: var(--space-4) !important;
+    gap: var(--space-6) !important;
+    margin-bottom: var(--space-4) !important;
   }
 
-  /* First section: Logo only (centered, full width) */
+  /* About section (first) - Logo only, full width top */
   .footer-section:first-child {
-    text-align: center;
-    order: 1;
-    grid-column: 1 / -1;
+    grid-column: 1 / -1 !important;
+    text-align: center !important;
+    padding-bottom: var(--space-4) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
   }
 
   .footer-section:first-child img[src*="logo2"] {
     max-width: 120px !important;
-    margin: 0 auto var(--space-4) !important;
+    margin: 0 auto !important;
+    display: block !important;
   }
 
   .footer-section:first-child p {
-    display: none; /* Hide description on mobile */
+    display: none !important;
   }
 
-  /* Hide social links from first section */
   .footer-section:first-child .social-links {
     display: none !important;
   }
 
-  /* Quick Links - left column, order 2 */
+  /* Quick Links - left column */
   .footer-section:nth-child(2) {
-    order: 2;
-    text-align: center;
+    text-align: center !important;
   }
 
   .footer-section:nth-child(2) h3 {
     font-size: var(--text-lg) !important;
     margin-bottom: var(--space-3) !important;
+    color: white !important;
   }
 
   .footer-section:nth-child(2) .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-    font-size: var(--text-base);
+    display: flex !important;
+    flex-direction: column !important;
+    gap: var(--space-2) !important;
   }
 
-  /* Contact section - right column, order 3 */
+  .footer-section:nth-child(2) .footer-links a {
+    font-size: var(--text-base) !important;
+    padding: var(--space-1) 0 !important;
+  }
+
+  /* Contact Us - right column */
   .footer-contact {
-    text-align: center;
-    order: 3;
+    text-align: center !important;
   }
 
   .footer-contact h3 {
     font-size: var(--text-lg) !important;
     margin-bottom: var(--space-3) !important;
+    color: white !important;
   }
 
   .footer-contact .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-    align-items: center;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: var(--space-2) !important;
+    align-items: center !important;
   }
 
   .footer-contact .contact-item {
-    justify-content: center;
+    font-size: var(--text-sm) !important;
   }
 
   .footer-contact .contact-item a,
@@ -1004,40 +1011,30 @@ main {
     font-size: var(--text-sm) !important;
   }
 
-  /* Social links - bottom center, full width, order 4 */
-  .footer-content::after {
-    content: '';
-    order: 4;
-    grid-column: 1 / -1;
-  }
-
-  /* Create centered social links at bottom */
-  .footer {
-    position: relative;
-  }
-
-  .footer .social-links-mobile {
+  /* Social Links Mobile - centered at bottom */
+  .social-links-mobile {
     display: flex !important;
-    justify-content: center;
-    gap: var(--space-6);
-    padding: var(--space-4) 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    margin-top: var(--space-4);
+    justify-content: center !important;
+    align-items: center !important;
+    gap: var(--space-6) !important;
+    padding: var(--space-4) 0 !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    margin-top: var(--space-4) !important;
   }
 
+  .social-links-mobile .social-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* Footer bottom logo */
   .footer-logo {
     max-width: 250px !important;
   }
 
   .footer-bottom {
     padding-top: var(--space-4) !important;
-  }
-}
-
-/* Add social links container for mobile */
-@media (max-width: 768px) {
-  .footer-content {
-    margin-bottom: 0 !important;
   }
 }
 
