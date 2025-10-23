@@ -930,6 +930,11 @@ main {
   }
 }
 
+/* Hide social-links-mobile on desktop */
+.social-links-mobile {
+  display: none;
+}
+
 /* Footer Responsive - Mobile 2-Column Layout */
 @media (max-width: 768px) {
   /* Main grid: 2 columns */
