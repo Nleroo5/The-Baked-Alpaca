@@ -859,32 +859,33 @@ main {
   [style*="grid-template-columns: 1fr 1fr"],
   [style*="grid-template-columns: 2fr 1fr"],
   [style*="grid-template-columns: 1fr 2fr"],
+  [style*="grid-template-columns: 1fr 1.5fr"],
   [style*="grid-template-columns: 2.5fr 1fr"],
   [style*="grid-template-columns: 0.8fr 1fr"] {
     grid-template-columns: 1fr !important;
   }
 
-  /* Reverse order for alternating layouts */
-  [style*="grid-template-columns"] > *:first-child {
-    order: 2;
+  /* Center all text content on mobile */
+  [style*="grid-template-columns"] > div {
+    text-align: center !important;
   }
 
-  [style*="grid-template-columns"] > *:last-child {
-    order: 1;
+  /* Center headings specifically */
+  [style*="grid-template-columns"] h2,
+  [style*="grid-template-columns"] h3,
+  [style*="grid-template-columns"] p {
+    text-align: center !important;
   }
 
-  /* Keep images first on services page */
-  .section:not(.section-light) [style*="grid-template-columns"] > *:first-child {
-    order: 1;
+  /* Images full width and centered */
+  [style*="grid-template-columns"] img {
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
   }
 
-  .section:not(.section-light) [style*="grid-template-columns"] > *:last-child {
-    order: 2;
-  }
-}
-
-/* Services Page Image Scaling */
-@media (max-width: 768px) {
+  /* Remove image transforms/scaling on mobile */
   [style*="transform: scale"] {
     transform: scale(1) !important;
   }
