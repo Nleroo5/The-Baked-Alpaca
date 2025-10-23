@@ -926,9 +926,11 @@ main {
     gap: var(--space-6) !important;
   }
 
-  /* Hide footer logo on mobile */
-  .footer-section img[src*="header-logo"] {
-    display: none;
+  /* Show footer logo on mobile (logo2.png) */
+  .footer-section img[src*="logo2"] {
+    display: block;
+    max-width: 150px !important;
+    margin: 0 auto var(--space-3) !important;
   }
 
   .footer-logo {
