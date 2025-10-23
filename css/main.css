@@ -930,56 +930,61 @@ main {
   }
 }
 
-/* Footer Responsive - Option 3: Minimize & Focus */
+/* Footer Responsive - Modified: 2-Column Layout */
 @media (max-width: 768px) {
   .footer-content {
-    grid-template-columns: 1fr !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
     gap: var(--space-4) !important;
   }
 
-  /* First section: Logo + Description + Social (centered) */
+  /* First section: Logo only (centered, full width) */
   .footer-section:first-child {
     text-align: center;
     order: 1;
+    grid-column: 1 / -1;
   }
 
   .footer-section:first-child img[src*="logo2"] {
     max-width: 120px !important;
-    margin: 0 auto var(--space-3) !important;
+    margin: 0 auto var(--space-4) !important;
   }
 
   .footer-section:first-child p {
     display: none; /* Hide description on mobile */
   }
 
-  /* Social icons - larger and centered */
-  .social-links {
-    justify-content: center !important;
-    gap: var(--space-6) !important;
+  /* Hide social links from first section */
+  .footer-section:first-child .social-links {
+    display: none !important;
   }
 
-  .social-link {
-    width: 40px !important;
-    height: 40px !important;
+  /* Quick Links - left column, order 2 */
+  .footer-section:nth-child(2) {
+    order: 2;
+    text-align: center;
   }
 
-  .social-link svg {
-    width: 28px !important;
-    height: 28px !important;
+  .footer-section:nth-child(2) h3 {
+    font-size: var(--text-lg) !important;
+    margin-bottom: var(--space-3) !important;
   }
 
-  /* Contact section - prominent, order 2 */
+  .footer-section:nth-child(2) .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    font-size: var(--text-base);
+  }
+
+  /* Contact section - right column, order 3 */
   .footer-contact {
     text-align: center;
-    order: 2;
-    grid-column: 1 / -1;
-    padding: var(--space-4) 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    order: 3;
   }
 
   .footer-contact h3 {
-    font-size: var(--text-2xl) !important;
+    font-size: var(--text-lg) !important;
     margin-bottom: var(--space-3) !important;
   }
 
@@ -996,34 +1001,28 @@ main {
 
   .footer-contact .contact-item a,
   .footer-contact .contact-item span {
-    font-size: var(--text-base) !important;
+    font-size: var(--text-sm) !important;
   }
 
-  /* Quick Links - horizontal, smaller, order 3 */
-  .footer-section:nth-child(2) {
-    order: 3;
-    text-align: center;
+  /* Social links - bottom center, full width, order 4 */
+  .footer-content::after {
+    content: '';
+    order: 4;
+    grid-column: 1 / -1;
   }
 
-  .footer-section:nth-child(2) h3 {
-    display: none; /* Hide "Quick Links" heading */
+  /* Create centered social links at bottom */
+  .footer {
+    position: relative;
   }
 
-  .footer-section:nth-child(2) .footer-links {
-    display: flex;
-    flex-wrap: wrap;
+  .footer .social-links-mobile {
+    display: flex !important;
     justify-content: center;
-    gap: var(--space-2);
-    font-size: var(--text-sm);
-  }
-
-  .footer-section:nth-child(2) .footer-links a {
-    padding: 0 var(--space-2);
-    border-right: 1px solid rgba(255, 255, 255, 0.4);
-  }
-
-  .footer-section:nth-child(2) .footer-links a:last-child {
-    border-right: none;
+    gap: var(--space-6);
+    padding: var(--space-4) 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: var(--space-4);
   }
 
   .footer-logo {
@@ -1031,7 +1030,14 @@ main {
   }
 
   .footer-bottom {
-    padding-top: var(--space-6) !important;
+    padding-top: var(--space-4) !important;
+  }
+}
+
+/* Add social links container for mobile */
+@media (max-width: 768px) {
+  .footer-content {
+    margin-bottom: 0 !important;
   }
 }
 
