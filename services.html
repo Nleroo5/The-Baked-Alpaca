@@ -401,9 +401,10 @@
   <style>
     /* Responsive adjustments for Services page */
     @media (max-width: 768px) {
-      /* Target all grid layouts on mobile */
+      /* Target all grid layouts on mobile - use flexbox for reordering */
       section > .container > div[style*="grid-template-columns"] {
-        display: block !important;
+        display: flex !important;
+        flex-direction: column !important;
       }
 
       section > .container > div[style*="grid-template-columns"] > div {
@@ -419,6 +420,17 @@
       section > .container > div[style*="grid-template-columns"] img {
         width: 100% !important;
         transform: none !important;
+      }
+
+      /* Reverse order for sections where text comes before image on desktop */
+      /* Custom Cakes section - text is first child, image is second */
+      section#custom-cakes > .container > div[style*="grid-template-columns: 1fr 1.5fr"] {
+        flex-direction: column-reverse !important;
+      }
+
+      /* Dessert Tables section - text is first child, image is second */
+      section#dessert-tables > .container > div[style*="grid-template-columns: 1fr 2fr"] {
+        flex-direction: column-reverse !important;
       }
 
       /* Center all text content on services page mobile */
