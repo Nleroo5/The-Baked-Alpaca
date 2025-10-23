@@ -412,49 +412,6 @@ function initVideoBackground() {
 }
 
 /**
- * Cookie Consent Banner
- */
-function initCookieConsent() {
-  if (hasConsentedToCookies()) return;
-
-  const banner = document.createElement('div');
-  banner.className = 'cookie-banner';
-  banner.style.cssText = `
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--color-secondary);
-    color: white;
-    padding: 1.5rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-  `;
-
-  banner.innerHTML = `
-    <p style="margin: 0; flex: 1; min-width: 250px;">
-      We use cookies to enhance your browsing experience. By continuing to use this site, you consent to our use of cookies.
-      <a href="/cookies.html" style="color: var(--color-accent); text-decoration: underline;">Learn more</a>
-    </p>
-    <button class="btn btn-accent" id="accept-cookies" style="white-space: nowrap;">
-      Accept
-    </button>
-  `;
-
-  document.body.appendChild(banner);
-
-  document.getElementById('accept-cookies').addEventListener('click', () => {
-    setConsentToCookies();
-    banner.remove();
-  });
-}
-
-/**
  * Smooth scroll for anchor links
  */
 function initSmoothScroll() {

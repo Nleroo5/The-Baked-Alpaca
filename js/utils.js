@@ -237,17 +237,3 @@ function prefersReducedMotion() {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
 
-/**
- * Simple cookie consent checker
- * @returns {boolean}
- */
-function hasConsentedToCookies() {
-  return localStorage.getItem('cookieConsent') === 'true';
-}
-
-/**
- * Set cookie consent
- */
-function setConsentToCookies() {
-  localStorage.setItem('cookieConsent', 'true');
-}

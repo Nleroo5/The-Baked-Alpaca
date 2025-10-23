@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initGalleryLightbox();
   initVideoBackground();
   initScrollAnimations();
-  initCookieConsent();
 
   // Initialize sliders
   const heroSlider = new ImageSlider('.hero-slider', {
