@@ -1079,6 +1079,19 @@ main {
     overflow: hidden !important;
   }
 
+  /* Center Contact Us section on mobile */
+  footer .footer-content .footer-section.footer-contact,
+  footer.footer .footer-content .footer-section.footer-contact,
+  .footer .footer-content .footer-section.footer-contact {
+    text-align: center !important;
+  }
+
+  footer .footer-content .footer-section.footer-contact .contact-info,
+  footer.footer .footer-content .footer-section.footer-contact .contact-info,
+  .footer .footer-content .footer-section.footer-contact .contact-info {
+    align-items: center !important;
+  }
+
   /* Show mobile social links - side by side */
   footer .social-links-mobile,
   footer.footer .social-links-mobile,
