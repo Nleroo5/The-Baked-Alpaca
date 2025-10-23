@@ -885,9 +885,20 @@ main {
     display: block !important;
   }
 
+  /* Remove overflow hidden on mobile for image containers */
+  [style*="grid-template-columns"] div[style*="overflow: hidden"] {
+    overflow: visible !important;
+  }
+
   /* Remove image transforms/scaling on mobile */
   [style*="transform: scale"] {
     transform: scale(1) !important;
+  }
+
+  /* Ensure images in grid layouts are properly sized */
+  [style*="grid-template-columns"] div img {
+    width: 100% !important;
+    height: auto !important;
   }
 }
 
