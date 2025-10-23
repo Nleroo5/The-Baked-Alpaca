@@ -1,0 +1,16 @@
+# Robots.txt for The Baked Alpaca
+# https://www.thebakedalpaca.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Disallow specific pages that shouldn't be indexed
+Disallow: /disclaimer.html
+Disallow: /cookies.html
+
+# Allow search engines to crawl all images
+Allow: /images/
+Allow: /assets/
+
+# Sitemap location
+Sitemap: https://www.thebakedalpaca.com/sitemap.xml

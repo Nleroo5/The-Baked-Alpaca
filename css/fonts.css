@@ -1,0 +1,67 @@
+/*
+ * The Baked Alpaca - Brand Fonts
+ *
+ * IMPORTANT: You need to add your actual font files to the /assets/fonts/ directory
+ *
+ * Required font files:
+ * - Beverly Hills Typeface (headers)
+ * - Arno Pro Light Display (body/subheaders)
+ * - Edwardian Script ITC Regular (accent text)
+ *
+ * Font file formats needed: .woff2 (modern browsers), .woff (fallback)
+ */
+
+/* ==================== */
+/* BEVERLY HILLS - Headers */
+/* ==================== */
+
+@font-face {
+  font-family: 'BEVERLY HILLS';
+  src: url('/assets/fonts/BeverlyHillsTypeface-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==================== */
+/* ARNO PRO - Body & Subheaders */
+/* ==================== */
+
+@font-face {
+  font-family: 'Arno Pro';
+  src: url('/assets/fonts/ArnoPro-LightDisplay.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==================== */
+/* EDWARDIAN SCRIPT ITC - Accent Text */
+/* ==================== */
+
+@font-face {
+  font-family: 'Edwardian Script ITC';
+  src: url('/assets/fonts/edwardianscriptitc.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ==================== */
+/* GOOGLE FONTS FALLBACK */
+/* ==================== */
+/*
+ * If you don't have the actual font files yet, uncomment this section
+ * to use similar Google Fonts as temporary placeholders:
+ */
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Crimson+Text:wght@300;400;600&family=Great+Vibes&display=swap');
+*/
+
+/* Then temporarily update variables.css:
+   --font-heading: 'Cinzel', serif;
+   --font-body: 'Crimson Text', serif;
+   --font-accent: 'Great Vibes', cursive;
+*/

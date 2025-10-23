@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Test - The Baked Alpaca</title>
+
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body style="padding: 2rem;">
+  <div class="container">
+    <h1>Color Scheme Test Page</h1>
+    <p style="font-size: 1.2rem; margin-bottom: 3rem;">This page shows what colors are actually being applied.</p>
+
+    <div style="background: white; padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+      <h2>Heading Test (Should be Terracotta #AA591D)</h2>
+      <p>Body text test (Should be Bronze #84703D)</p>
+
+      <div style="margin-top: 2rem;">
+        <h3>Color Swatches - What You Should See:</h3>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+          <div style="padding: 1rem; background: #AA591D; color: white; border-radius: 8px;">
+            <strong>Terracotta #AA591D</strong><br>
+            Headings, Buttons
+          </div>
+
+          <div style="padding: 1rem; background: #84703D; color: white; border-radius: 8px;">
+            <strong>Bronze #84703D</strong><br>
+            Body Text
+          </div>
+
+          <div style="padding: 1rem; background: #F3F0EB; color: #3A2A1A; border: 2px solid #BABBB3; border-radius: 8px;">
+            <strong>Cream #F3F0EB</strong><br>
+            Background
+          </div>
+
+          <div style="padding: 1rem; background: #E1D8C7; color: #3A2A1A; border-radius: 8px;">
+            <strong>Beige #E1D8C7</strong><br>
+            Logo BG, Sections
+          </div>
+
+          <div style="padding: 1rem; background: #BABBB3; color: white; border-radius: 8px;">
+            <strong>Sage #BABBB3</strong><br>
+            Borders
+          </div>
+
+          <div style="padding: 1rem; background: #3A2A1A; color: white; border-radius: 8px;">
+            <strong>Dark Brown #3A2A1A</strong><br>
+            Footer ONLY
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem;">
+        <h3>Actual Applied Colors Test:</h3>
+        <div style="margin-top: 1rem; padding: 2rem; background: #F3F0EB; border-radius: 8px;">
+          <h1 style="margin-bottom: 1rem;">H1 Heading (color-secondary)</h1>
+          <h2 style="margin-bottom: 1rem;">H2 Heading (color-secondary)</h2>
+          <h3 style="margin-bottom: 1rem;">H3 Heading (color-secondary)</h3>
+          <p style="margin-bottom: 1rem;">This is body text using color-text-primary. It should be bronze #84703D, not dark brown!</p>
+          <p style="color: var(--color-text-secondary); margin-bottom: 1rem;">This is secondary text. Also should be bronze #84703D.</p>
+          <a href="#" class="btn btn-primary">Primary Button (Terracotta)</a>
+        </div>
+      </div>
+
+      <div style="margin-top: 3rem; padding: 2rem; background: #f9f9f9; border-radius: 8px;">
+        <h3>CSS Variable Values (Inspector)</h3>
+        <p>Open DevTools (F12) and check the computed styles for these elements:</p>
+        <ul style="margin-top: 1rem; margin-left: 2rem;">
+          <li><code>--color-secondary</code> should be: <strong>#AA591D</strong> (Terracotta)</li>
+          <li><code>--color-text-primary</code> should be: <strong>#84703D</strong> (Bronze)</li>
+          <li><code>--color-dark-brown</code> should be: <strong>#3A2A1A</strong> (Only for footer)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="background: var(--color-dark-brown); color: white; padding: 2rem; border-radius: 8px;">
+      <h3 style="color: white;">Footer Preview (Dark Brown Background)</h3>
+      <p style="color: rgba(255,255,255,0.9);">This is the ONLY place dark brown should appear - as a background color in the footer.</p>
+    </div>
+  </div>
+
+  <script>
+    // Log actual CSS variable values
+    const root = document.documentElement;
+    const styles = getComputedStyle(root);
+
+    console.log('=== ACTUAL CSS VARIABLE VALUES ===');
+    console.log('--color-secondary:', styles.getPropertyValue('--color-secondary').trim());
+    console.log('--color-text-primary:', styles.getPropertyValue('--color-text-primary').trim());
+    console.log('--color-primary:', styles.getPropertyValue('--color-primary').trim());
+    console.log('--color-dark-brown:', styles.getPropertyValue('--color-dark-brown').trim());
+    console.log('===================================');
+  </script>
+</body>
+</html>
