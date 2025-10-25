@@ -20,12 +20,11 @@ body {
   color: var(--color-text-primary);
   background-color: var(--color-background);
   overflow-x: hidden;
-  text-align: center;
 }
 
-/* Center all text globally */
-p, h1, h2, h3, h4, h5, h6, div, span, a, li, section {
-  text-align: center;
+/* Desktop: Left-aligned text by default */
+p, h1, h2, h3, h4, h5, h6, div, span, li {
+  text-align: left;
 }
 
 /* Typography */
@@ -882,6 +881,16 @@ main section:nth-of-type(3) .grid-2-col {
 
   .hero-subtitle {
     font-size: var(--text-base) !important;
+  }
+
+  /* ==================== */
+  /* TEXT ALIGNMENT - MOBILE */
+  /* ==================== */
+
+  /* Center all text on mobile */
+  body,
+  p, h1, h2, h3, h4, h5, h6, div, span, a, li, section {
+    text-align: center !important;
   }
 
   /* ==================== */
