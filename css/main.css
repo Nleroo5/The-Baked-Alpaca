@@ -20,6 +20,12 @@ body {
   color: var(--color-text-primary);
   background-color: var(--color-background);
   overflow-x: hidden;
+  text-align: center;
+}
+
+/* Center all text globally */
+p, h1, h2, h3, h4, h5, h6, div, span, a, li, section {
+  text-align: center;
 }
 
 /* Typography */
@@ -791,6 +797,13 @@ main {
   /* Tablet - Gallery */
   .gallery-grid {
     grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  /* Tablet - About Page Second Section */
+  /* Move second photo to bottom on tablets */
+  .grid-2-col {
+    display: flex !important;
+    flex-direction: column-reverse !important;
   }
 }
 
