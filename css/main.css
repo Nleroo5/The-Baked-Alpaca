@@ -1075,7 +1075,7 @@ main {
   main section:nth-of-type(2) .grid-balanced,
   main section:nth-of-type(3) .grid-2-col {
     grid-template-columns: 1fr !important;
-    gap: var(--space-8) !important;
+    gap: var(--space-3) !important;
   }
 
   /* About page first section: reverse order so image appears above text */
@@ -1193,7 +1193,7 @@ main {
   }
 
   .hero-subtitle {
-    font-size: 14px !important;
+    font-size: 16px !important;
     line-height: 1.4 !important;
     margin-bottom: var(--space-3) !important;
   }
@@ -1211,7 +1211,7 @@ main {
   }
 
   main > section.hero:first-child .hero-subtitle {
-    font-size: 16px !important;
+    font-size: 18px !important;
     margin-bottom: var(--space-3) !important;
     padding: 0 var(--space-2) !important;
   }
