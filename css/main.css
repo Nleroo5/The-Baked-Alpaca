@@ -235,18 +235,19 @@ a:hover {
 /* HERO PAGE LOGO - DESKTOP (>1200px) */
 /* ==================== */
 
-/* Desktop: Logo on left side of hero section */
+/* Desktop: Logo on left side of hero section, text centered */
 @media (min-width: 1201px) {
   .hero-with-logo {
+    position: relative !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     padding: 0 var(--space-8) !important;
-    position: relative !important;
   }
 
   .hero-with-logo .hero-content {
     text-align: center !important;
+    position: relative !important;
     z-index: 10 !important;
   }
 
@@ -255,6 +256,7 @@ a:hover {
     text-align: center !important;
   }
 
+  /* Logo positioned on LEFT SIDE of hero */
   .hero-page-logo {
     position: absolute !important;
     left: var(--space-8) !important;
