@@ -773,48 +773,47 @@ main {
 }
 
 /* ========================================= */
-/* SERVICES PAGE - PROPER IMAGE SIZING */
+/* SERVICES & ABOUT PAGES - DESKTOP ONLY */
 /* ========================================= */
 
-/* Desktop: Professional image-to-text ratios for services page */
-section#pastries .grid-large-content {
-  grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
-  gap: var(--space-12) !important; /* 96px gap */
-}
+/* DESKTOP ONLY: Apply custom grid ratios and spacing */
+@media (min-width: 769px) {
+  /* Services page - Professional image-to-text ratios */
+  section#pastries .grid-large-content {
+    grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
+    gap: var(--space-12) !important; /* 96px gap */
+  }
 
-section#custom-cakes .grid-balanced {
-  grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
-  gap: var(--space-12) !important; /* 96px gap */
-}
+  section#custom-cakes .grid-balanced {
+    grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
+    gap: var(--space-12) !important; /* 96px gap */
+  }
 
-section#entremets .grid-2-col {
-  grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
-  gap: var(--space-12) !important; /* 96px gap */
-}
+  section#entremets .grid-2-col {
+    grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
+    gap: var(--space-12) !important; /* 96px gap */
+  }
 
-section#dessert-tables .grid-content-focus {
-  grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
-  gap: var(--space-12) !important; /* 96px gap */
-}
+  section#dessert-tables .grid-content-focus {
+    grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
+    gap: var(--space-12) !important; /* 96px gap */
+  }
 
-section#weddings .grid-2-col {
-  grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
-  gap: var(--space-12) !important; /* 96px gap */
-}
+  section#weddings .grid-2-col {
+    grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
+    gap: var(--space-12) !important; /* 96px gap */
+  }
 
-/* ========================================= */
-/* ABOUT PAGE - PROPER IMAGE SIZING */
-/* ========================================= */
+  /* About page sections - professional ratios */
+  main section:nth-of-type(2) .grid-balanced {
+    grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
+    gap: var(--space-12) !important; /* 96px gap */
+  }
 
-/* About page sections - professional ratios */
-main section:nth-of-type(2) .grid-balanced {
-  grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
-  gap: var(--space-12) !important; /* 96px gap */
-}
-
-main section:nth-of-type(3) .grid-2-col {
-  grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
-  gap: var(--space-12) !important; /* 96px gap */
+  main section:nth-of-type(3) .grid-2-col {
+    grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
+    gap: var(--space-12) !important; /* 96px gap */
+  }
 }
 
 /* ========================================= */
