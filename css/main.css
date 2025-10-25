@@ -1123,8 +1123,23 @@ main {
     display: block !important;
   }
 
-  /* Mobile: Grid classes automatically stack to 1 column via components.css */
-  /* No need to override - components.css handles this */
+  /* CRITICAL: Force single column with high specificity to override desktop rules */
+  /* Services page - mobile overrides */
+  section#pastries .grid-large-content,
+  section#custom-cakes .grid-balanced,
+  section#entremets .grid-2-col,
+  section#dessert-tables .grid-content-focus,
+  section#weddings .grid-2-col {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-8) !important;
+  }
+
+  /* About page - mobile overrides */
+  main section:nth-of-type(2) .grid-balanced,
+  main section:nth-of-type(3) .grid-2-col {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-8) !important;
+  }
 
   /* About page images - rounded corners and spacing */
   main section:nth-of-type(2) img,
