@@ -1606,40 +1606,31 @@ main {
   /* HOMEPAGE CARDS - MOBILE */
   /* ==================== */
 
-  /* Reduce spacing between card images and titles to 24px total */
-  .card:nth-child(1) .img-overlay-wrapper {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    outline: 5px solid blue !important; /* TEST - Card 1 (Artisan Pastries) */
-  }
-
-  .card:nth-child(2) .img-overlay-wrapper {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-    outline: 5px solid green !important; /* TEST - Card 2 (Custom Cakes) - CORRECT */
-  }
-
+  /* Fix spacing between card images and titles - 24px total */
+  /* Cards 1 and 3 need padding-bottom removed from wrapper */
+  .card:nth-child(1) .img-overlay-wrapper,
   .card:nth-child(3) .img-overlay-wrapper {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
-    outline: 5px solid purple !important; /* TEST - Card 3 (Dessert Tables) */
+  }
+
+  /* Card 2 is correct with just margin-bottom: 0 */
+  .card:nth-child(2) .img-overlay-wrapper {
+    margin-bottom: 0 !important;
   }
 
   .card .card-img {
     margin-bottom: 0 !important;
-    border: 5px solid red !important; /* TEST */
   }
 
   .card .card-title {
     padding-top: var(--space-3) !important; /* 24px */
     margin-top: 0 !important;
-    background: yellow !important; /* TEST - REMOVE */
   }
 
   .card h3.card-title {
     padding-top: var(--space-3) !important; /* 24px */
     margin-top: 0 !important;
-    background: yellow !important; /* TEST - REMOVE */
   }
 }
 
@@ -1649,25 +1640,30 @@ main {
   /* ==================== */
 
   /* HOMEPAGE CARDS - EXTRA SMALL MOBILE */
-  .card .img-overlay-wrapper {
+  /* Cards 1 and 3 need padding-bottom removed from wrapper */
+  .card:nth-child(1) .img-overlay-wrapper,
+  .card:nth-child(3) .img-overlay-wrapper {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  /* Card 2 is correct with just margin-bottom: 0 */
+  .card:nth-child(2) .img-overlay-wrapper {
     margin-bottom: 0 !important;
   }
 
   .card .card-img {
     margin-bottom: 0 !important;
-    border: 5px solid red !important; /* TEST */
   }
 
   .card .card-title {
     padding-top: var(--space-3) !important; /* 24px */
     margin-top: 0 !important;
-    background: yellow !important; /* TEST - REMOVE */
   }
 
   .card h3.card-title {
     padding-top: var(--space-3) !important; /* 24px */
     margin-top: 0 !important;
-    background: yellow !important; /* TEST - REMOVE */
   }
 
   .hero-title img {
