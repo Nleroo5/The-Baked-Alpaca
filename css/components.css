@@ -103,8 +103,8 @@
   .grid-image-focus,
   .grid-large-content,
   .grid-balanced {
-    grid-template-columns: 1fr;
-    gap: var(--space-8);
+    grid-template-columns: 1fr !important;
+    gap: var(--space-8) !important;
   }
 
   /* Remove all image zoom effects on mobile */

@@ -1124,24 +1124,8 @@ main section:nth-of-type(3) .grid-2-col {
     display: block !important;
   }
 
-  /* Service page - fix grid layouts on mobile - all single column */
-  section#pastries .grid-large-content,
-  section#custom-cakes .grid-balanced,
-  section#entremets .grid-2-col,
-  section#dessert-tables .grid-content-focus,
-  section#weddings .grid-2-col {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: var(--space-8) !important;
-  }
-
-  /* About page - fix grid layouts on mobile - all single column */
-  main section:nth-of-type(2) .grid-balanced,
-  main section:nth-of-type(3) .grid-2-col {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: var(--space-8) !important;
-  }
+  /* Mobile: Grid classes automatically stack to 1 column via components.css */
+  /* No need to override - components.css handles this */
 
   /* About page images - rounded corners and spacing */
   main section:nth-of-type(2) img,
