@@ -891,15 +891,45 @@ main {
 
 /* DESKTOP ONLY: Apply custom grid ratios and spacing above 1200px */
 @media (min-width: 1201px) {
-  /* Services page - UNIFORM sizing for professional consistency */
-  section.section#pastries .container > .grid-large-content,
-  section.section#custom-cakes .container > .grid-balanced,
-  section.section#entremets .container > .grid-2-col,
-  section.section#dessert-tables .container > .grid-content-focus,
+  /* Services page - Adjusted ratios based on image aspect ratios (Option C) */
+
+  /* 1st section - Pastries (photo1.jpg) - Landscape orientation */
+  section.section#pastries .container > .grid-large-content {
+    display: grid !important;
+    grid-template-columns: 1.6fr 1fr !important; /* Image left, more space for landscape */
+    gap: var(--space-12) !important;
+    align-items: center !important;
+  }
+
+  /* 2nd section - Custom Cakes (photo7.jpg) - Portrait/Square orientation */
+  section.section#custom-cakes .container > .grid-balanced {
+    display: grid !important;
+    grid-template-columns: 1fr 1.3fr !important; /* Image right, medium space for portrait */
+    gap: var(--space-12) !important;
+    align-items: center !important;
+  }
+
+  /* 3rd section - Entremets (photo11.jpg) - Square/Portrait orientation */
+  section.section#entremets .container > .grid-2-col {
+    display: grid !important;
+    grid-template-columns: 1.3fr 1fr !important; /* Image left, medium space for square */
+    gap: var(--space-12) !important;
+    align-items: center !important;
+  }
+
+  /* 4th section - Dessert Tables (photo9.jpg) - Landscape orientation */
+  section.section#dessert-tables .container > .grid-content-focus {
+    display: grid !important;
+    grid-template-columns: 1fr 1.6fr !important; /* Image right, more space for landscape */
+    gap: var(--space-12) !important;
+    align-items: center !important;
+  }
+
+  /* 5th section - Weddings (photo2.jpg) - Portrait orientation */
   section.section#weddings .container > .grid-2-col {
     display: grid !important;
-    grid-template-columns: 1fr 1fr !important; /* UNIFORM 50/50 split */
-    gap: var(--space-12) !important; /* 96px gap */
+    grid-template-columns: 1.8fr 1fr !important; /* Image left, more space for portrait */
+    gap: var(--space-12) !important;
     align-items: center !important;
   }
 
