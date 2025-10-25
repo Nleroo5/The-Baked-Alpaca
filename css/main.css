@@ -918,6 +918,16 @@ main {
     display: flex !important;
     flex-direction: column-reverse !important;
   }
+
+  /* Center all buttons in single column view */
+  .btn,
+  a.btn,
+  button.btn {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important;
+  }
 }
 
 /* ========================================= */
@@ -1342,8 +1352,10 @@ main {
   section#entremets .btn,
   section#dessert-tables .btn,
   section#weddings .btn {
-    display: inline-block !important;
-    margin: 0 auto !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important;
   }
 }
 
