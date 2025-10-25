@@ -774,6 +774,44 @@ main {
 }
 
 /* ========================================= */
+/* SERVICES PAGE - PROPER IMAGE SIZING */
+/* ========================================= */
+
+/* Desktop: Professional image-to-text ratios for services page */
+section#pastries .grid-large-content {
+  grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
+}
+
+section#custom-cakes .grid-balanced {
+  grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
+}
+
+section#entremets .grid-2-col {
+  grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
+}
+
+section#dessert-tables .grid-content-focus {
+  grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
+}
+
+section#weddings .grid-2-col {
+  grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
+}
+
+/* ========================================= */
+/* ABOUT PAGE - PROPER IMAGE SIZING */
+/* ========================================= */
+
+/* About page sections - professional ratios */
+main section:nth-of-type(2) .grid-balanced {
+  grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
+}
+
+main section:nth-of-type(3) .grid-2-col {
+  grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
+}
+
+/* ========================================= */
 /* ========================================= */
 /* MOBILE RESPONSIVE STYLES */
 /* @media (max-width: 768px) */
@@ -1067,6 +1105,35 @@ main {
     transform: none !important;
     margin-bottom: var(--space-8) !important;
     border-radius: var(--radius-lg) !important;
+    display: block !important;
+  }
+
+  /* Service page - fix grid layouts on mobile - all single column */
+  section#pastries .grid-large-content,
+  section#custom-cakes .grid-balanced,
+  section#entremets .grid-2-col,
+  section#dessert-tables .grid-content-focus,
+  section#weddings .grid-2-col {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: var(--space-8) !important;
+  }
+
+  /* About page - fix grid layouts on mobile - all single column */
+  main section:nth-of-type(2) .grid-balanced,
+  main section:nth-of-type(3) .grid-2-col {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: var(--space-8) !important;
+  }
+
+  /* About page images - rounded corners and spacing */
+  main section:nth-of-type(2) img,
+  main section:nth-of-type(3) img {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: var(--radius-lg) !important;
+    margin-bottom: var(--space-8) !important;
     display: block !important;
   }
 
