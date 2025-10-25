@@ -235,7 +235,7 @@ a:hover {
 /* HERO PAGE LOGO - DESKTOP (>1200px) */
 /* ==================== */
 
-/* Desktop: Logo on left side of hero section, text centered */
+/* Desktop: Logo on left side, text centered based on FULL PAGE WIDTH */
 @media (min-width: 1201px) {
   .hero-with-logo {
     position: relative !important;
@@ -246,9 +246,14 @@ a:hover {
   }
 
   .hero-with-logo .hero-content {
+    position: absolute !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
     text-align: center !important;
-    position: relative !important;
     z-index: 10 !important;
+    width: 100% !important;
+    max-width: 800px !important;
   }
 
   .hero-with-logo .hero-title,
