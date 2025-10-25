@@ -1496,7 +1496,7 @@ main {
     width: 100% !important;
     max-width: 100% !important;
     transform: none !important;
-    margin-bottom: var(--space-8) !important;
+    margin-bottom: var(--space-4) !important;
     border-radius: var(--radius-lg) !important;
     display: block !important;
   }
