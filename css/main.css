@@ -40,6 +40,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: var(--leading-tight);
 }
 
+/* Text alignment utility */
+.text-center-force {
+  text-align: center !important;
+}
+
 h1 {
   font-size: var(--text-5xl);
   margin-bottom: var(--space-4);
@@ -131,7 +136,7 @@ a:hover {
 }
 
 .logo-img {
-  height: 50px;
+  height: 70px;
   width: auto;
   display: block;
   transition: opacity var(--transition-base);
@@ -785,7 +790,7 @@ main {
 @media (min-width: 1201px) {
   /* Services page - Professional image-to-text ratios */
   section#pastries .grid-large-content {
-    grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
+    grid-template-columns: 1.3fr 1fr !important; /* IMAGE LARGER for 1st section */
     gap: var(--space-12) !important; /* 96px gap */
   }
 
@@ -800,7 +805,7 @@ main {
   }
 
   section#dessert-tables .grid-content-focus {
-    grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
+    grid-template-columns: 1fr 1.3fr !important; /* IMAGE LARGER for 4th section */
     gap: var(--space-12) !important; /* 96px gap */
   }
 
@@ -809,14 +814,14 @@ main {
     gap: var(--space-12) !important; /* 96px gap */
   }
 
-  /* About page sections - professional ratios */
+  /* About page sections - larger images */
   main section:nth-of-type(2) .grid-balanced {
-    grid-template-columns: 1.5fr 1fr !important; /* Text larger, image smaller */
+    grid-template-columns: 1fr 1.2fr !important; /* Text and image more balanced, image larger */
     gap: var(--space-12) !important; /* 96px gap */
   }
 
   main section:nth-of-type(3) .grid-2-col {
-    grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
+    grid-template-columns: 1.2fr 1fr !important; /* Image larger, text smaller */
     gap: var(--space-12) !important; /* 96px gap */
   }
 }
@@ -886,7 +891,7 @@ main {
   /* ==================== */
 
   .logo-img {
-    height: 35px !important;
+    height: 50px !important;
   }
 
   /* ==================== */
