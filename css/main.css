@@ -1211,7 +1211,7 @@ main {
   }
 
   main > section.hero:first-child .hero-subtitle {
-    font-size: 13px !important;
+    font-size: 16px !important;
     margin-bottom: var(--space-3) !important;
     padding: 0 var(--space-2) !important;
   }
