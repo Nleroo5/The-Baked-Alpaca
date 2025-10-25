@@ -921,14 +921,39 @@ main {
 
   /* ==================== */
   /* TEXT ALIGNMENT - MOBILE */
+  /* Professional mobile design principles */
   /* ==================== */
 
-  /* Center all text on mobile */
+  /* Headings centered for visual hierarchy and impact */
   h1, h2, h3, h4, h5, h6 {
     text-align: center !important;
   }
 
-  p, li, div, span, a {
+  /* Body text LEFT-aligned for easier reading and scanning */
+  p {
+    text-align: left !important;
+  }
+
+  /* Lists left-aligned for readability */
+  li {
+    text-align: left !important;
+  }
+
+  /* Center buttons and CTAs for focus */
+  .btn {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    width: fit-content !important;
+  }
+
+  /* Navigation centered */
+  .nav-mobile .nav-link {
+    text-align: center !important;
+  }
+
+  /* Footer content centered */
+  .footer p, .footer a, .footer-section {
     text-align: center !important;
   }
 
@@ -1006,16 +1031,6 @@ main {
   [style*="grid-template-columns: 2.5fr 1fr"],
   [style*="grid-template-columns: 0.8fr 1fr"] {
     grid-template-columns: 1fr !important;
-  }
-
-  [style*="grid-template-columns"] > div {
-    text-align: center !important;
-  }
-
-  [style*="grid-template-columns"] h2,
-  [style*="grid-template-columns"] h3,
-  [style*="grid-template-columns"] p {
-    text-align: center !important;
   }
 
   /* ==================== */
@@ -1131,14 +1146,13 @@ main {
     flex-direction: column-reverse !important;
   }
 
-  /* All divs in service sections - centered */
+  /* All divs in service sections - full width */
   section#pastries .container > div > div,
   section#custom-cakes .container > div > div,
   section#entremets .container > div > div,
   section#dessert-tables .container > div > div,
   section#weddings .container > div > div {
     width: 100% !important;
-    text-align: center !important;
     margin-bottom: var(--space-6) !important;
   }
 
@@ -1218,38 +1232,46 @@ main {
     height: auto !important;
   }
 
-  /* Service page text centered */
+  /* Service page headings - centered for impact */
   section#pastries h2,
   section#pastries h3,
-  section#pastries p,
-  section#pastries ul,
   section#custom-cakes h2,
   section#custom-cakes h3,
-  section#custom-cakes p,
-  section#custom-cakes ul,
   section#entremets h2,
   section#entremets h3,
-  section#entremets p,
-  section#entremets ul,
   section#dessert-tables h2,
   section#dessert-tables h3,
-  section#dessert-tables p,
-  section#dessert-tables ul,
   section#weddings h2,
-  section#weddings h3,
-  section#weddings p,
-  section#weddings ul {
+  section#weddings h3 {
     text-align: center !important;
   }
 
-  /* Service page lists centered */
+  /* Service page body text - LEFT aligned for readability */
+  section#pastries p,
+  section#custom-cakes p,
+  section#entremets p,
+  section#dessert-tables p,
+  section#weddings p {
+    text-align: left !important;
+  }
+
+  /* Service page lists - LEFT aligned for scanning */
   section#pastries ul,
   section#custom-cakes ul,
   section#entremets ul,
   section#dessert-tables ul,
   section#weddings ul {
-    list-style-position: inside !important;
-    padding-left: 0 !important;
+    text-align: left !important;
+    list-style-position: outside !important;
+    padding-left: var(--space-6) !important;
+  }
+
+  section#pastries li,
+  section#custom-cakes li,
+  section#entremets li,
+  section#dessert-tables li,
+  section#weddings li {
+    text-align: left !important;
   }
 
   /* Service page buttons centered */
