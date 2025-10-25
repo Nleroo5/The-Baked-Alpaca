@@ -1066,8 +1066,9 @@ main {
 /* ========================================= */
 
 @media (max-width: 768px) {
+  /* REMOVED - Conflicts with flexbox display below (line 1103) */
   /* Force single column on services and about pages below 768px */
-  section#pastries .grid-large-content,
+  /* section#pastries .grid-large-content,
   section#custom-cakes .grid-balanced,
   section#entremets .grid-2-col,
   section#dessert-tables .grid-content-focus,
@@ -1076,7 +1077,7 @@ main {
   main section:nth-of-type(3) .grid-2-col {
     grid-template-columns: 1fr !important;
     gap: var(--space-3) !important;
-  }
+  } */
 
   /* About page first section: reverse order so image appears above text */
   main section:nth-of-type(2) .grid-balanced {
@@ -1511,16 +1512,16 @@ main {
     display: block !important;
   }
 
-  /* CRITICAL: Force single column with high specificity to override desktop rules */
+  /* REMOVED - Conflicts with flexbox display above (line 1479) */
   /* Services page - mobile overrides */
-  section#pastries .grid-large-content,
+  /* section#pastries .grid-large-content,
   section#custom-cakes .grid-balanced,
   section#entremets .grid-2-col,
   section#dessert-tables .grid-content-focus,
   section#weddings .grid-2-col {
     grid-template-columns: 1fr !important;
     gap: var(--space-3) !important;
-  }
+  } */
 
   /* About page - mobile overrides */
   main section:nth-of-type(2) .grid-balanced,
