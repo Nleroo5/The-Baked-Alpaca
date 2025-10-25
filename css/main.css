@@ -1170,10 +1170,18 @@ main {
 
   .hero {
     min-height: 300px !important;
+    max-height: 100vh !important;
     display: flex !important;
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
+    overflow: hidden !important;
+  }
+
+  /* All hero sections with logo - never larger than viewport */
+  .hero-with-logo {
+    max-height: 100vh !important;
+    overflow: hidden !important;
   }
 
   .hero-content {
