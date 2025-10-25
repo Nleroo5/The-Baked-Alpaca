@@ -809,7 +809,7 @@ main {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* ==================== */
   /* HEADER - MOBILE */
   /* ==================== */
@@ -830,7 +830,7 @@ main {
     align-items: center !important;
   }
 
-  /* HIDE hero logo images on mobile */
+  /* HIDE hero logo images on mobile (under 900px) */
   .hero img[src*="header-logo"],
   .hero .hero-logo-img,
   .hero-logo-img,
