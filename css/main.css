@@ -23,13 +23,21 @@ body {
 }
 
 /* Desktop: Professional text alignment */
-/* Headings centered for impact, body text left for readability */
+/* Headings centered for impact, body text left for readability by default */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+/* Default left alignment - but allows inline styles to override */
 p, li {
   text-align: left;
+}
+
+/* Allow paragraphs and lists with inline text-align to override */
+p[style*="text-align: center"],
+ul[style*="text-align: center"],
+li[style*="text-align: center"] {
+  text-align: center !important;
 }
 
 /* Typography */
@@ -934,14 +942,22 @@ main {
     text-align: center !important;
   }
 
-  /* Body text LEFT-aligned for easier reading and scanning */
-  p {
+  /* Body text LEFT-aligned by default, but allow inline styles to override */
+  p:not([style*="text-align: center"]) {
     text-align: left !important;
   }
 
-  /* Lists left-aligned for readability */
-  li {
+  /* Lists left-aligned by default, but allow inline styles to override */
+  li:not([style*="text-align: center"]),
+  ul:not([style*="text-align: center"]) {
     text-align: left !important;
+  }
+
+  /* Force center for elements with inline center style */
+  p[style*="text-align: center"],
+  ul[style*="text-align: center"],
+  li[style*="text-align: center"] {
+    text-align: center !important;
   }
 
   /* Center buttons and CTAs for focus */
@@ -1251,32 +1267,51 @@ main {
     text-align: center !important;
   }
 
-  /* Service page body text - LEFT aligned for readability */
-  section#pastries p,
-  section#custom-cakes p,
-  section#entremets p,
-  section#dessert-tables p,
-  section#weddings p {
+  /* Service page body text - LEFT aligned by default, but allow inline center */
+  section#pastries p:not([style*="text-align: center"]),
+  section#custom-cakes p:not([style*="text-align: center"]),
+  section#entremets p:not([style*="text-align: center"]),
+  section#dessert-tables p:not([style*="text-align: center"]),
+  section#weddings p:not([style*="text-align: center"]) {
     text-align: left !important;
   }
 
-  /* Service page lists - LEFT aligned for scanning */
-  section#pastries ul,
-  section#custom-cakes ul,
-  section#entremets ul,
-  section#dessert-tables ul,
-  section#weddings ul {
+  /* Service page lists - LEFT aligned by default, but allow inline center */
+  section#pastries ul:not([style*="text-align: center"]),
+  section#custom-cakes ul:not([style*="text-align: center"]),
+  section#entremets ul:not([style*="text-align: center"]),
+  section#dessert-tables ul:not([style*="text-align: center"]),
+  section#weddings ul:not([style*="text-align: center"]) {
     text-align: left !important;
     list-style-position: outside !important;
     padding-left: var(--space-6) !important;
   }
 
-  section#pastries li,
-  section#custom-cakes li,
-  section#entremets li,
-  section#dessert-tables li,
-  section#weddings li {
+  section#pastries li:not([style*="text-align: center"]),
+  section#custom-cakes li:not([style*="text-align: center"]),
+  section#entremets li:not([style*="text-align: center"]),
+  section#dessert-tables li:not([style*="text-align: center"]),
+  section#weddings li:not([style*="text-align: center"]) {
     text-align: left !important;
+  }
+
+  /* Force center for service page elements with inline center style */
+  section#pastries p[style*="text-align: center"],
+  section#custom-cakes p[style*="text-align: center"],
+  section#entremets p[style*="text-align: center"],
+  section#dessert-tables p[style*="text-align: center"],
+  section#weddings p[style*="text-align: center"],
+  section#pastries ul[style*="text-align: center"],
+  section#custom-cakes ul[style*="text-align: center"],
+  section#entremets ul[style*="text-align: center"],
+  section#dessert-tables ul[style*="text-align: center"],
+  section#weddings ul[style*="text-align: center"],
+  section#pastries li[style*="text-align: center"],
+  section#custom-cakes li[style*="text-align: center"],
+  section#entremets li[style*="text-align: center"],
+  section#dessert-tables li[style*="text-align: center"],
+  section#weddings li[style*="text-align: center"] {
+    text-align: center !important;
   }
 
   /* Service page buttons centered */
