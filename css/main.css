@@ -1025,8 +1025,8 @@ main {
   img.hero-logo-img {
     position: static !important;
     transform: none !important;
-    max-width: 100px !important;
-    width: 100px !important;
+    max-width: 120px !important;
+    width: 120px !important;
     margin: 0 auto var(--space-4) auto !important;
     display: block !important;
   }
