@@ -901,14 +901,14 @@ main {
 
   section.section#custom-cakes .container > .grid-balanced {
     display: grid !important;
-    grid-template-columns: 2.2fr 1fr !important; /* IMAGE EVEN LARGER for 2nd section */
+    grid-template-columns: 2.5fr 1fr !important; /* IMAGE MASSIVE for 2nd section */
     gap: var(--space-12) !important; /* 96px gap */
     align-items: center !important;
   }
 
   section.section#entremets .container > .grid-2-col {
     display: grid !important;
-    grid-template-columns: 1fr 2.2fr !important; /* IMAGE EVEN LARGER for 3rd section */
+    grid-template-columns: 1fr 2.5fr !important; /* IMAGE MASSIVE for 3rd section */
     gap: var(--space-12) !important; /* 96px gap */
     align-items: center !important;
   }
@@ -922,7 +922,7 @@ main {
 
   section.section#weddings .container > .grid-2-col {
     display: grid !important;
-    grid-template-columns: 1fr 2.2fr !important; /* IMAGE EVEN LARGER for 5th section */
+    grid-template-columns: 1fr 2.5fr !important; /* IMAGE MASSIVE for 5th section */
     gap: var(--space-12) !important; /* 96px gap */
     align-items: center !important;
   }
