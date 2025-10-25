@@ -1607,9 +1607,22 @@ main {
   /* ==================== */
 
   /* Reduce spacing between card images and titles to 24px total */
-  .card .img-overlay-wrapper {
+  .card:nth-child(1) .img-overlay-wrapper {
     margin-bottom: 0 !important;
-    outline: 5px solid blue !important; /* TEST - using outline so it doesn't affect layout */
+    padding-bottom: 0 !important;
+    outline: 5px solid blue !important; /* TEST - Card 1 (Artisan Pastries) */
+  }
+
+  .card:nth-child(2) .img-overlay-wrapper {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    outline: 5px solid green !important; /* TEST - Card 2 (Custom Cakes) - CORRECT */
+  }
+
+  .card:nth-child(3) .img-overlay-wrapper {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+    outline: 5px solid purple !important; /* TEST - Card 3 (Dessert Tables) */
   }
 
   .card .card-img {
