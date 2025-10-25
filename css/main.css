@@ -955,6 +955,16 @@ main {
     grid-template-columns: 1.5fr 1fr !important; /* IMAGE MUCH LARGER */
     gap: var(--space-12) !important; /* 96px gap */
   }
+
+  /* Footer - Push Contact Us section more to the right */
+  .footer-content {
+    grid-template-columns: 1.2fr 1fr !important;
+    gap: 96px !important;
+  }
+
+  .footer-section.footer-contact {
+    padding-left: 48px !important;
+  }
 }
 
 /* ========================================= */
