@@ -799,12 +799,12 @@ main {
     grid-template-columns: repeat(3, 1fr) !important;
   }
 
-  /* Tablet - About Page Second Section */
-  /* Move second photo to bottom on tablets */
-  .grid-2-col {
+  /* Tablet - About Page Second Section ONLY */
+  /* This rule is commented out to fix services page structure */
+  /* .grid-2-col {
     display: flex !important;
     flex-direction: column-reverse !important;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
