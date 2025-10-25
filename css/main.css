@@ -1601,6 +1601,19 @@ main {
     margin-right: auto !important;
     width: fit-content !important;
   }
+
+  /* ==================== */
+  /* HOMEPAGE CARDS - MOBILE */
+  /* ==================== */
+
+  /* Reduce spacing between card images and titles to 24px total */
+  .card-img {
+    margin-bottom: 0 !important;
+  }
+
+  .card-title {
+    padding-top: var(--space-3) !important; /* 24px */
+  }
 }
 
 @media (max-width: 480px) {
