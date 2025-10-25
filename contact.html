@@ -436,38 +436,6 @@
   <script src="/js/components.js"></script>
   <script src="/js/main.js"></script>
 
-  <style>
-    /* Contact Page Specific Styles */
-    @media (max-width: 768px) {
-      section > .container > div[style*="grid-template-columns: 1fr 1fr"] {
-        display: block !important;
-      }
-
-      section > .container > div[style*="grid-template-columns: 1fr 1fr"] > div {
-        margin-bottom: var(--space-6);
-      }
-
-      section > .container > div[style*="grid-template-columns: 1fr 1fr"] > div:last-child {
-        margin-bottom: 0;
-      }
-    }
-
-    /* Form loading state */
-    .loading {
-      display: inline-block;
-      width: 14px;
-      height: 14px;
-      border: 2px solid rgba(255, 255, 255, 0.3);
-      border-radius: 50%;
-      border-top-color: white;
-      animation: spin 0.6s linear infinite;
-    }
-
-    @keyframes spin {
-      to { transform: rotate(360deg); }
-    }
-  </style>
-
   <script>
     // Smooth scroll to form
     document.addEventListener('DOMContentLoaded', () => {
