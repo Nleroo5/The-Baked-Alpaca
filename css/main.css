@@ -856,7 +856,7 @@ main {
   /* ==================== */
 
   .logo-img {
-    height: 25px;
+    height: 25px !important;
   }
 
   /* ==================== */
