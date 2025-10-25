@@ -1010,18 +1010,33 @@ main {
     grid-template-columns: 1fr !important;
   }
 
-  /* Hide hero logo image on mobile */
+  /* Mobile hero layout - logo smaller and centered at top */
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    padding-top: var(--space-6) !important;
+  }
+
+  /* Hero logo - smaller and centered on mobile */
   .hero .hero-logo-img,
   .hero-logo-img,
   img.hero-logo-img {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
-    width: 0 !important;
-    height: 0 !important;
-    max-width: 0 !important;
-    position: absolute !important;
-    left: -9999px !important;
+    position: static !important;
+    transform: none !important;
+    max-width: 120px !important;
+    width: 120px !important;
+    margin: 0 auto var(--space-4) auto !important;
+    display: block !important;
+  }
+
+  /* Hero content - full width and centered */
+  .hero .hero-content {
+    position: static !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0 var(--space-4) !important;
   }
 }
 
