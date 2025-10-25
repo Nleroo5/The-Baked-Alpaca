@@ -965,6 +965,22 @@ main {
   .footer-section.footer-contact {
     padding-left: 80px !important; /* Additional left padding */
   }
+
+  /* Make Contact Us section text larger */
+  .footer-section.footer-contact h3 {
+    font-size: 24px !important;
+  }
+
+  .footer-section.footer-contact .contact-item,
+  .footer-section.footer-contact .contact-item a,
+  .footer-section.footer-contact .contact-item span {
+    font-size: 18px !important;
+  }
+
+  /* Make logo section description larger too */
+  .footer-section:first-child p {
+    font-size: 18px !important;
+  }
 }
 
 /* ========================================= */
