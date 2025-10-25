@@ -104,6 +104,19 @@
   .grid-large-content,
   .grid-balanced {
     grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  /* Remove all image zoom effects on mobile */
+  .img-zoom-sm img,
+  .img-zoom-md img,
+  .img-zoom-lg img {
+    transform: none !important;
+  }
+
+  /* Add spacing to image containers on mobile */
+  .img-container {
+    margin-bottom: var(--space-4);
   }
 }
 

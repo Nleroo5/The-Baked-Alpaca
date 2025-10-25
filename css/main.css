@@ -1065,6 +1065,26 @@ main {
     width: 100% !important;
     max-width: 100% !important;
     transform: none !important;
+    margin-bottom: var(--space-6) !important;
+  }
+
+  /* Remove overflow hidden on image containers on mobile */
+  section#pastries .img-container,
+  section#custom-cakes .img-container,
+  section#entremets .img-container,
+  section#dessert-tables .img-container,
+  section#weddings .img-container {
+    overflow: visible !important;
+    padding: var(--space-2) 0 !important;
+  }
+
+  /* Add spacing between service sections */
+  section#pastries,
+  section#custom-cakes,
+  section#entremets,
+  section#dessert-tables,
+  section#weddings {
+    padding: var(--space-8) 0 !important;
   }
 
   /* Remove ALL transforms on mobile to prevent overflow */
