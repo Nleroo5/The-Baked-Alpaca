@@ -267,10 +267,10 @@ a:hover {
     left: var(--space-8) !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
-    max-width: 280px !important;
+    max-width: 320px !important;
     width: auto !important;
     height: auto !important;
-    max-height: 300px !important;
+    max-height: 350px !important;
     z-index: 5 !important;
   }
 }
@@ -293,7 +293,7 @@ a:hover {
     order: 2 !important;
     display: block !important;
     margin: var(--space-4) auto 0 auto !important;
-    max-width: 220px !important;
+    max-width: 250px !important;
     width: auto !important;
     height: auto !important;
     transform: none !important;
@@ -305,7 +305,7 @@ a:hover {
 /* Tablet: Scale down logo */
 @media (max-width: 1024px) {
   .hero-page-logo {
-    max-width: 180px !important;
+    max-width: 200px !important;
   }
 }
 
@@ -1109,7 +1109,7 @@ main {
 
   /* Hero page logo - mobile */
   .hero-page-logo {
-    max-width: 150px !important;
+    max-width: 170px !important;
     margin-top: var(--space-3) !important;
   }
 
