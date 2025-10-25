@@ -794,7 +794,7 @@ main {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   /* ==================== */
   /* HEADER - MOBILE */
   /* ==================== */
@@ -979,16 +979,24 @@ main {
   /* TYPOGRAPHY - MOBILE */
   /* ==================== */
 
-  h1, .section-title {
-    font-size: var(--text-3xl) !important;
+  h1 {
+    font-size: 2.5rem !important; /* 40px - Maintain hierarchy */
+  }
+
+  .section-title {
+    font-size: 2rem !important; /* 32px */
   }
 
   h2 {
-    font-size: var(--text-2xl) !important;
+    font-size: 2rem !important; /* 32px */
   }
 
   h3 {
-    font-size: var(--text-xl) !important;
+    font-size: 1.5rem !important; /* 24px */
+  }
+
+  h4 {
+    font-size: 1.25rem !important; /* 20px */
   }
 
   /* ==================== */
@@ -1044,6 +1052,20 @@ main {
     width: 100% !important;
     max-width: 100% !important;
     transform: none !important;
+  }
+
+  /* Remove ALL transforms on mobile to prevent overflow */
+  [style*="transform"] img,
+  img[style*="transform"],
+  [style*="scale"] img,
+  img[style*="scale"] {
+    transform: none !important;
+  }
+
+  /* Global image safety - prevent overflow */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 
   /* Service page text centered */

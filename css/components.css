@@ -39,6 +39,55 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+/* Professional grid patterns - replace inline styles */
+.grid-2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.grid-content-focus {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.grid-image-focus {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.grid-large-content {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.grid-balanced {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+/* Gap variations */
+.gap-sm {
+  gap: var(--space-3);
+}
+
+.gap-md {
+  gap: var(--space-6);
+}
+
+.gap-lg {
+  gap: var(--space-8);
+}
+
 @media (max-width: 1024px) {
   .grid-4 {
     grid-template-columns: repeat(2, 1fr);
@@ -48,7 +97,12 @@
 @media (max-width: 768px) {
   .grid-2,
   .grid-3,
-  .grid-4 {
+  .grid-4,
+  .grid-2-col,
+  .grid-content-focus,
+  .grid-image-focus,
+  .grid-large-content,
+  .grid-balanced {
     grid-template-columns: 1fr;
   }
 }
@@ -73,6 +127,70 @@
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+/* ==================== */
+/* UTILITY CLASSES - Replace inline styles */
+/* ==================== */
+
+/* Image containers */
+.img-container {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.img-zoom-sm img {
+  transform: scale(1.1);
+  transition: transform var(--transition-slow);
+}
+
+.img-zoom-md img {
+  transform: scale(1.2);
+  transition: transform var(--transition-slow);
+}
+
+.img-zoom-lg img {
+  transform: scale(1.35);
+  transition: transform var(--transition-slow);
+}
+
+.img-container:hover img {
+  transform: scale(1.05);
+}
+
+/* Common styling patterns */
+.rounded-lg {
+  border-radius: var(--radius-lg);
+}
+
+.shadow-xl {
+  box-shadow: var(--shadow-xl);
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* Text alignment */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Width utilities */
+.w-full {
+  width: 100%;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 /* ==================== */
