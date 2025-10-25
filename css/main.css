@@ -1605,6 +1605,19 @@ main {
     grid-template-columns: 1fr !important;
   }
 
+  /* Force gallery images to crop to 1:1 on mobile - no letterboxing */
+  .gallery-item {
+    aspect-ratio: 1 / 1 !important;
+    overflow: hidden !important;
+  }
+
+  .gallery-item img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
   .btn {
     width: 100%;
     text-align: center;
