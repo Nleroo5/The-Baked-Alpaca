@@ -1509,14 +1509,14 @@ main {
   section#dessert-tables .grid-content-focus,
   section#weddings .grid-2-col {
     grid-template-columns: 1fr !important;
-    gap: var(--space-8) !important;
+    gap: var(--space-3) !important;
   }
 
   /* About page - mobile overrides */
   main section:nth-of-type(2) .grid-balanced,
   main section:nth-of-type(3) .grid-2-col {
     grid-template-columns: 1fr !important;
-    gap: var(--space-8) !important;
+    gap: var(--space-3) !important;
   }
 
   /* About page images - rounded corners and spacing */
