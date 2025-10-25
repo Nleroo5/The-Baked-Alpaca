@@ -1607,12 +1607,22 @@ main {
   /* ==================== */
 
   /* Reduce spacing between card images and titles to 24px total */
-  .card-img {
+  .card .img-overlay-wrapper {
     margin-bottom: 0 !important;
   }
 
-  .card-title {
+  .card .card-img {
+    margin-bottom: 0 !important;
+  }
+
+  .card .card-title {
     padding-top: var(--space-3) !important; /* 24px */
+    background: yellow !important; /* TEST - REMOVE */
+  }
+
+  .card h3.card-title {
+    padding-top: var(--space-3) !important; /* 24px */
+    background: yellow !important; /* TEST - REMOVE */
   }
 }
 
@@ -1620,6 +1630,25 @@ main {
   /* ==================== */
   /* EXTRA SMALL MOBILE */
   /* ==================== */
+
+  /* HOMEPAGE CARDS - EXTRA SMALL MOBILE */
+  .card .img-overlay-wrapper {
+    margin-bottom: 0 !important;
+  }
+
+  .card .card-img {
+    margin-bottom: 0 !important;
+  }
+
+  .card .card-title {
+    padding-top: var(--space-3) !important; /* 24px */
+    background: yellow !important; /* TEST - REMOVE */
+  }
+
+  .card h3.card-title {
+    padding-top: var(--space-3) !important; /* 24px */
+    background: yellow !important; /* TEST - REMOVE */
+  }
 
   .hero-title img {
     max-width: 350px;
