@@ -1492,7 +1492,7 @@ main {
   section#dessert-tables .container > div > div,
   section#weddings .container > div > div {
     width: 100% !important;
-    margin-bottom: var(--space-6) !important;
+    margin-bottom: 0 !important;
   }
 
   /* Service page images full width */
