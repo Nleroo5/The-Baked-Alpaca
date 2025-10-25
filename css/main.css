@@ -958,13 +958,13 @@ main {
 
   /* Footer - Push Contact Us section more to the right */
   .footer-content {
-    grid-template-columns: 1.2fr 1fr !important;
-    gap: 96px !important;
+    grid-template-columns: 2fr 1fr !important; /* More dramatic - left column 2x bigger */
+    gap: 120px !important; /* Larger gap */
     background: red !important; /* TEST */
   }
 
   .footer-section.footer-contact {
-    padding-left: 48px !important;
+    padding-left: 80px !important; /* More padding */
     background: blue !important; /* TEST */
   }
 }
