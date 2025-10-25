@@ -1232,7 +1232,7 @@ main {
 
   /* Hero page logo - mobile */
   .hero-page-logo {
-    max-width: 200px !important;
+    max-width: 220px !important;
     margin-top: var(--space-3) !important;
   }
 
