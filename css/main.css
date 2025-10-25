@@ -22,8 +22,13 @@ body {
   overflow-x: hidden;
 }
 
-/* Desktop: Left-aligned text by default */
-p, h1, h2, h3, h4, h5, h6, div, span, li {
+/* Desktop: Professional text alignment */
+/* Headings centered for impact, body text left for readability */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+p, li {
   text-align: left;
 }
 
@@ -126,7 +131,7 @@ a:hover {
 }
 
 .logo-img {
-  height: 70px;
+  height: 55px;
   width: auto;
   display: block;
   transition: opacity var(--transition-base);
@@ -856,7 +861,7 @@ main {
   /* ==================== */
 
   .logo-img {
-    height: 25px !important;
+    height: 40px;
   }
 
   /* ==================== */
