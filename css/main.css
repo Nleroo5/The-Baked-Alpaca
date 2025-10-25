@@ -1617,11 +1617,13 @@ main {
 
   .card .card-title {
     padding-top: var(--space-3) !important; /* 24px */
+    margin-top: 0 !important;
     background: yellow !important; /* TEST - REMOVE */
   }
 
   .card h3.card-title {
     padding-top: var(--space-3) !important; /* 24px */
+    margin-top: 0 !important;
     background: yellow !important; /* TEST - REMOVE */
   }
 }
@@ -1642,11 +1644,13 @@ main {
 
   .card .card-title {
     padding-top: var(--space-3) !important; /* 24px */
+    margin-top: 0 !important;
     background: yellow !important; /* TEST - REMOVE */
   }
 
   .card h3.card-title {
     padding-top: var(--space-3) !important; /* 24px */
+    margin-top: 0 !important;
     background: yellow !important; /* TEST - REMOVE */
   }
 
