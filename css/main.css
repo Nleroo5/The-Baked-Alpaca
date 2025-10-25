@@ -928,6 +928,32 @@ main {
     margin-right: auto !important;
     width: fit-content !important;
   }
+
+  /* Center specific italic paragraphs in single column view */
+  .center-single-column {
+    text-align: center !important;
+  }
+
+  /* Fix image structure - ensure proper stacking in single column */
+  section#pastries .grid-large-content,
+  section#custom-cakes .grid-balanced,
+  section#entremets .grid-2-col,
+  section#dessert-tables .grid-content-focus,
+  section#weddings .grid-2-col {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Services: sections where text comes first on desktop - reverse to show image first */
+  section#custom-cakes .grid-balanced,
+  section#dessert-tables .grid-content-focus {
+    flex-direction: column-reverse !important;
+  }
+
+  /* About page sections - proper image order */
+  main section:nth-of-type(3) .grid-2-col {
+    flex-direction: column !important;
+  }
 }
 
 /* ========================================= */
