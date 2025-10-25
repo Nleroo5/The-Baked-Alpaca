@@ -131,7 +131,7 @@ a:hover {
 }
 
 .logo-img {
-  height: 55px;
+  height: 50px;
   width: auto;
   display: block;
   transition: opacity var(--transition-base);
@@ -206,7 +206,7 @@ a:hover {
 .nav-mobile .nav-link {
   display: block;
   padding: var(--space-3) var(--space-2);
-  font-size: var(--text-xl);
+  font-size: var(--text-2xl);
   border-bottom: 1px solid var(--color-border-light);
 }
 
@@ -781,8 +781,8 @@ main {
 /* SERVICES & ABOUT PAGES - DESKTOP ONLY */
 /* ========================================= */
 
-/* DESKTOP ONLY: Apply custom grid ratios and spacing */
-@media (min-width: 769px) {
+/* DESKTOP ONLY: Apply custom grid ratios and spacing above 1200px */
+@media (min-width: 1201px) {
   /* Services page - Professional image-to-text ratios */
   section#pastries .grid-large-content {
     grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
@@ -818,6 +818,31 @@ main {
   main section:nth-of-type(3) .grid-2-col {
     grid-template-columns: 1fr 1.5fr !important; /* Image smaller, text larger */
     gap: var(--space-12) !important; /* 96px gap */
+  }
+}
+
+/* ========================================= */
+/* TABLET/MEDIUM SCREENS - SINGLE COLUMN */
+/* @media (max-width: 1200px) */
+/* ========================================= */
+
+@media (max-width: 1200px) {
+  /* Force single column on services and about pages below 1200px */
+  section#pastries .grid-large-content,
+  section#custom-cakes .grid-balanced,
+  section#entremets .grid-2-col,
+  section#dessert-tables .grid-content-focus,
+  section#weddings .grid-2-col,
+  main section:nth-of-type(2) .grid-balanced,
+  main section:nth-of-type(3) .grid-2-col {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-8) !important;
+  }
+
+  /* About page first section: reverse order so image appears above text */
+  main section:nth-of-type(2) .grid-balanced {
+    display: flex !important;
+    flex-direction: column-reverse !important;
   }
 }
 
@@ -861,7 +886,7 @@ main {
   /* ==================== */
 
   .logo-img {
-    height: 40px;
+    height: 35px !important;
   }
 
   /* ==================== */
@@ -899,8 +924,11 @@ main {
   /* ==================== */
 
   /* Center all text on mobile */
-  body,
-  p, h1, h2, h3, h4, h5, h6, div, span, a, li, section {
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center !important;
+  }
+
+  p, li, div, span, a {
     text-align: center !important;
   }
 
