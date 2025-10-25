@@ -1033,6 +1033,92 @@ main {
   .section {
     padding: var(--space-8) 0 !important;
   }
+
+  /* ==================== */
+  /* SERVICES PAGE - MOBILE */
+  /* ==================== */
+
+  /* Service sections: stack vertically, photo above text */
+  section#pastries .container > div,
+  section#custom-cakes .container > div,
+  section#entremets .container > div,
+  section#dessert-tables .container > div,
+  section#weddings .container > div {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Reverse sections where text comes first on desktop */
+  section#custom-cakes .container > div,
+  section#dessert-tables .container > div {
+    flex-direction: column-reverse !important;
+  }
+
+  /* All divs in service sections - centered */
+  section#pastries .container > div > div,
+  section#custom-cakes .container > div > div,
+  section#entremets .container > div > div,
+  section#dessert-tables .container > div > div,
+  section#weddings .container > div > div {
+    width: 100% !important;
+    text-align: center !important;
+    margin-bottom: var(--space-6) !important;
+  }
+
+  /* Service page images full width */
+  section#pastries img,
+  section#custom-cakes img,
+  section#entremets img,
+  section#dessert-tables img,
+  section#weddings img {
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+  }
+
+  /* Service page text centered */
+  section#pastries h2,
+  section#pastries h3,
+  section#pastries p,
+  section#pastries ul,
+  section#custom-cakes h2,
+  section#custom-cakes h3,
+  section#custom-cakes p,
+  section#custom-cakes ul,
+  section#entremets h2,
+  section#entremets h3,
+  section#entremets p,
+  section#entremets ul,
+  section#dessert-tables h2,
+  section#dessert-tables h3,
+  section#dessert-tables p,
+  section#dessert-tables ul,
+  section#weddings h2,
+  section#weddings h3,
+  section#weddings p,
+  section#weddings ul {
+    text-align: center !important;
+  }
+
+  /* Service page lists centered */
+  section#pastries ul,
+  section#custom-cakes ul,
+  section#entremets ul,
+  section#dessert-tables ul,
+  section#weddings ul {
+    list-style-position: inside !important;
+    padding-left: 0 !important;
+  }
+
+  /* Service page buttons centered */
+  section#pastries .btn,
+  section#custom-cakes .btn,
+  section#entremets .btn,
+  section#dessert-tables .btn,
+  section#weddings .btn {
+    display: inline-block !important;
+    margin: 0 auto !important;
+  }
 }
 
 @media (max-width: 480px) {
