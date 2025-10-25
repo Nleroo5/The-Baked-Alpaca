@@ -1065,7 +1065,9 @@ main {
     width: 100% !important;
     max-width: 100% !important;
     transform: none !important;
-    margin-bottom: var(--space-6) !important;
+    margin-bottom: var(--space-8) !important;
+    border-radius: var(--radius-lg) !important;
+    display: block !important;
   }
 
   /* Remove overflow hidden on image containers on mobile */
@@ -1075,7 +1077,8 @@ main {
   section#dessert-tables .img-container,
   section#weddings .img-container {
     overflow: visible !important;
-    padding: var(--space-2) 0 !important;
+    margin-bottom: var(--space-6) !important;
+    padding: 0 !important;
   }
 
   /* Add spacing between service sections */

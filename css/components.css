@@ -104,7 +104,7 @@
   .grid-large-content,
   .grid-balanced {
     grid-template-columns: 1fr;
-    gap: var(--space-6);
+    gap: var(--space-8);
   }
 
   /* Remove all image zoom effects on mobile */
