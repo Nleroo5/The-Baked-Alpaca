@@ -891,38 +891,14 @@ main {
 
 /* DESKTOP ONLY: Apply custom grid ratios and spacing above 1200px */
 @media (min-width: 1201px) {
-  /* Services page - Professional image-to-text ratios */
-  section.section#pastries .container > .grid-large-content {
-    display: grid !important;
-    grid-template-columns: 2.5fr 1fr !important; /* IMAGE EVEN LARGER for 1st section */
-    gap: var(--space-12) !important; /* 96px gap */
-    align-items: center !important;
-  }
-
-  section.section#custom-cakes .container > .grid-balanced {
-    display: grid !important;
-    grid-template-columns: 2.5fr 1fr !important; /* IMAGE MASSIVE for 2nd section */
-    gap: var(--space-12) !important; /* 96px gap */
-    align-items: center !important;
-  }
-
-  section.section#entremets .container > .grid-2-col {
-    display: grid !important;
-    grid-template-columns: 1fr 2.5fr !important; /* IMAGE MASSIVE for 3rd section */
-    gap: var(--space-12) !important; /* 96px gap */
-    align-items: center !important;
-  }
-
-  section.section#dessert-tables .container > .grid-content-focus {
-    display: grid !important;
-    grid-template-columns: 1fr 1.8fr !important; /* IMAGE slightly larger for 4th section */
-    gap: var(--space-12) !important; /* 96px gap */
-    align-items: center !important;
-  }
-
+  /* Services page - UNIFORM sizing for professional consistency */
+  section.section#pastries .container > .grid-large-content,
+  section.section#custom-cakes .container > .grid-balanced,
+  section.section#entremets .container > .grid-2-col,
+  section.section#dessert-tables .container > .grid-content-focus,
   section.section#weddings .container > .grid-2-col {
     display: grid !important;
-    grid-template-columns: 1fr 2.5fr !important; /* IMAGE MASSIVE for 5th section */
+    grid-template-columns: 1fr 1fr !important; /* UNIFORM 50/50 split */
     gap: var(--space-12) !important; /* 96px gap */
     align-items: center !important;
   }
