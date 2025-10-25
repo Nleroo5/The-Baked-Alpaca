@@ -1107,6 +1107,7 @@ main {
   section#weddings .grid-2-col {
     display: flex !important;
     flex-direction: column !important;
+    gap: var(--space-3) !important;
   }
 
   /* Services: sections where text comes first on desktop - reverse to show image first */
