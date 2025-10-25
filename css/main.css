@@ -232,6 +232,55 @@ a:hover {
 }
 
 /* ==================== */
+/* HERO PAGE LOGO - DESKTOP (>1200px) */
+/* ==================== */
+
+/* Desktop: Logo on left side of hero section */
+@media (min-width: 1201px) {
+  .hero-with-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 var(--space-8) !important;
+  }
+
+  .hero-with-logo .hero-content {
+    flex: 1 !important;
+    max-width: 60% !important;
+  }
+
+  .hero-page-logo {
+    position: absolute !important;
+    left: var(--space-8) !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    max-width: 200px !important;
+    width: auto !important;
+    height: auto !important;
+    max-height: 250px !important;
+    z-index: 10 !important;
+  }
+}
+
+/* Smaller screens (≤1200px): Logo under subheading, centered */
+@media (max-width: 1200px) {
+  .hero-page-logo {
+    display: block !important;
+    margin: var(--space-4) auto 0 auto !important;
+    max-width: 180px !important;
+    width: auto !important;
+    height: auto !important;
+  }
+}
+
+/* Tablet: Scale down logo */
+@media (max-width: 1024px) {
+  .hero-page-logo {
+    max-width: 150px !important;
+  }
+}
+
+/* ==================== */
 /* FOOTER - DESKTOP (>1024px) */
 /* ==================== */
 
@@ -1027,6 +1076,12 @@ main {
 
   .hero-subtitle {
     font-size: var(--text-base) !important;
+  }
+
+  /* Hero page logo - mobile */
+  .hero-page-logo {
+    max-width: 120px !important;
+    margin-top: var(--space-3) !important;
   }
 
   /* ==================== */
