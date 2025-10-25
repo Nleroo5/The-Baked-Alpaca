@@ -1093,18 +1093,54 @@ main {
     flex-direction: column !important;
     text-align: center !important;
     order: 1 !important;
+    padding: var(--space-4) var(--space-3) !important;
   }
 
   .hero-title {
     font-size: var(--text-3xl) !important;
+    margin-bottom: var(--space-2) !important;
   }
 
   .hero-title img {
-    max-width: 500px;
+    max-width: 280px !important;
   }
 
   .hero-subtitle {
-    font-size: var(--text-base) !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+    margin-bottom: var(--space-3) !important;
+  }
+
+  /* Homepage hero - fit on mobile screen without scrolling */
+  main > section.hero:first-child {
+    min-height: calc(100vh - var(--header-height)) !important;
+    max-height: calc(100vh - var(--header-height)) !important;
+    padding: var(--space-4) 0 !important;
+  }
+
+  main > section.hero:first-child .hero-title img {
+    max-width: 240px !important;
+    margin-bottom: var(--space-2) !important;
+  }
+
+  main > section.hero:first-child .hero-subtitle {
+    font-size: 13px !important;
+    margin-bottom: var(--space-3) !important;
+    padding: 0 var(--space-2) !important;
+  }
+
+  main > section.hero:first-child .hero-cta {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: var(--space-2) !important;
+    width: 100% !important;
+    padding: 0 var(--space-4) !important;
+  }
+
+  main > section.hero:first-child .hero-cta .btn {
+    padding: var(--space-2) var(--space-3) !important;
+    font-size: 14px !important;
+    width: 100% !important;
   }
 
   /* Hero page logo - mobile */
