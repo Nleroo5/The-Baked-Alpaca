@@ -960,10 +960,12 @@ main {
   .footer-content {
     grid-template-columns: 1.2fr 1fr !important;
     gap: 96px !important;
+    background: red !important; /* TEST */
   }
 
   .footer-section.footer-contact {
     padding-left: 48px !important;
+    background: blue !important; /* TEST */
   }
 }
 
