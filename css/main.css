@@ -272,12 +272,28 @@ a:hover {
 
 /* Smaller screens (≤1200px): Logo under subheading, centered */
 @media (max-width: 1200px) {
+  .hero-with-logo {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .hero-with-logo .hero-content {
+    order: 1 !important;
+  }
+
   .hero-page-logo {
+    position: relative !important;
+    order: 2 !important;
     display: block !important;
     margin: var(--space-4) auto 0 auto !important;
     max-width: 220px !important;
     width: auto !important;
     height: auto !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
   }
 }
 
