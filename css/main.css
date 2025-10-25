@@ -933,6 +933,18 @@ main {
     align-items: center !important;
   }
 
+  /* Center all buttons on services page for desktop */
+  section#pastries .btn,
+  section#custom-cakes .btn,
+  section#entremets .btn,
+  section#dessert-tables .btn,
+  section#weddings .btn {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important;
+  }
+
   /* About page sections - EVEN LARGER images */
   main section:nth-of-type(2) .grid-balanced {
     grid-template-columns: 1fr 1.5fr !important; /* IMAGE MUCH LARGER */
@@ -990,12 +1002,71 @@ main {
 }
 
 /* ========================================= */
-/* TABLET/MEDIUM SCREENS - SINGLE COLUMN */
-/* @media (max-width: 1200px) */
+/* TABLET SCREENS - OPTION C (769px - 1200px) */
 /* ========================================= */
 
-@media (max-width: 1200px) {
-  /* Force single column on services and about pages below 1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* Services page - Option C ratios for tablet screens */
+
+  /* 1st section - Pastries (landscape) */
+  section.section#pastries .container > .grid-large-content {
+    display: grid !important;
+    grid-template-columns: 1.4fr 1fr !important;
+    gap: var(--space-8) !important;
+    align-items: center !important;
+  }
+
+  /* 2nd section - Custom Cakes (portrait/square) */
+  section.section#custom-cakes .container > .grid-balanced {
+    display: grid !important;
+    grid-template-columns: 1fr 1.2fr !important;
+    gap: var(--space-8) !important;
+    align-items: center !important;
+  }
+
+  /* 3rd section - Entremets (square/portrait) */
+  section.section#entremets .container > .grid-2-col {
+    display: grid !important;
+    grid-template-columns: 1.2fr 1fr !important;
+    gap: var(--space-8) !important;
+    align-items: center !important;
+  }
+
+  /* 4th section - Dessert Tables (landscape) */
+  section.section#dessert-tables .container > .grid-content-focus {
+    display: grid !important;
+    grid-template-columns: 1fr 1.4fr !important;
+    gap: var(--space-8) !important;
+    align-items: center !important;
+  }
+
+  /* 5th section - Weddings (portrait) */
+  section.section#weddings .container > .grid-2-col {
+    display: grid !important;
+    grid-template-columns: 1.5fr 1fr !important;
+    gap: var(--space-8) !important;
+    align-items: center !important;
+  }
+
+  /* Center buttons on services page for tablet */
+  section#pastries .btn,
+  section#custom-cakes .btn,
+  section#entremets .btn,
+  section#dessert-tables .btn,
+  section#weddings .btn {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content !important;
+  }
+}
+
+/* ========================================= */
+/* MOBILE SCREENS - SINGLE COLUMN (≤768px) */
+/* ========================================= */
+
+@media (max-width: 768px) {
+  /* Force single column on services and about pages below 768px */
   section#pastries .grid-large-content,
   section#custom-cakes .grid-balanced,
   section#entremets .grid-2-col,
