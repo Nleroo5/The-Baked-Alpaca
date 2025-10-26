@@ -1638,6 +1638,12 @@ main {
   .card:nth-child(3) .img-overlay-wrapper {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    outline: 3px solid red !important; /* TEST - see wrapper bounds */
+  }
+
+  .card:nth-child(1) .card-title,
+  .card:nth-child(3) .card-title {
+    outline: 3px solid blue !important; /* TEST - see title bounds */
   }
 
   /* Card 2 is correct with just margin-bottom: 0 */
