@@ -1640,7 +1640,8 @@ main {
   .grid-3 > .card:nth-child(3) .img-overlay-wrapper {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
-    background: lime !important; /* TEST */
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
   /* Remove title top/bottom padding - OVERRIDE components.css line 417 */
@@ -1648,16 +1649,14 @@ main {
   .grid-3 > .card:nth-child(3) .card-title,
   .grid-3 > .card:nth-child(1) h3.card-title,
   .grid-3 > .card:nth-child(3) h3.card-title {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    margin-top: 0 !important;
-    background: orange !important; /* TEST */
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
-  /* Remove card bottom padding - OVERRIDE components.css line 394 */
+  /* Reduce card padding dramatically */
   .grid-3 > .card:nth-child(1),
   .grid-3 > .card:nth-child(3) {
-    padding-bottom: var(--space-3) !important; /* Keep some bottom padding */
+    padding: var(--space-3) !important; /* Reduce ALL padding to 24px */
   }
 
   /* Override card-img margin-bottom from components.css line 408 */
@@ -1699,22 +1698,23 @@ main {
   .grid-3 > .card:nth-child(3) .img-overlay-wrapper {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
   }
 
-  /* Remove title top/bottom padding */
+  /* Remove title padding and margin */
   .grid-3 > .card:nth-child(1) .card-title,
   .grid-3 > .card:nth-child(3) .card-title,
   .grid-3 > .card:nth-child(1) h3.card-title,
   .grid-3 > .card:nth-child(3) h3.card-title {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    margin-top: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
-  /* Remove card bottom padding */
+  /* Reduce card padding dramatically */
   .grid-3 > .card:nth-child(1),
   .grid-3 > .card:nth-child(3) {
-    padding-bottom: var(--space-3) !important;
+    padding: var(--space-3) !important; /* Reduce ALL padding to 24px */
   }
 
   /* Override card-img margin-bottom */
