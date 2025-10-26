@@ -1632,19 +1632,23 @@ main {
   /* HOMEPAGE CARDS - MOBILE */
   /* ==================== */
 
-  /* Fix spacing between card images and titles - 24px total */
+  /* Fix spacing between card images and titles */
   /* Cards 1 and 3 need padding-bottom removed from wrapper */
   .card:nth-child(1) .img-overlay-wrapper,
   .card:nth-child(3) .img-overlay-wrapper {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
-    outline: 3px solid red !important; /* TEST - see wrapper bounds */
   }
 
   .card:nth-child(1) .card-title,
   .card:nth-child(3) .card-title {
-    padding-top: 0 !important; /* Zero padding */
-    outline: 3px solid blue !important; /* TEST - see title bounds */
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .card:nth-child(1),
+  .card:nth-child(3) {
+    padding-bottom: 0 !important;
   }
 
   /* Card 2 is correct with just margin-bottom: 0 */
@@ -1677,6 +1681,17 @@ main {
   .card:nth-child(1) .img-overlay-wrapper,
   .card:nth-child(3) .img-overlay-wrapper {
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .card:nth-child(1) .card-title,
+  .card:nth-child(3) .card-title {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .card:nth-child(1),
+  .card:nth-child(3) {
     padding-bottom: 0 !important;
   }
 
