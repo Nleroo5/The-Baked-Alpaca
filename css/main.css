@@ -1643,6 +1643,7 @@ main {
 
   .card:nth-child(1) .card-title,
   .card:nth-child(3) .card-title {
+    padding-top: 12px !important; /* Reduce from 24px to 12px */
     outline: 3px solid blue !important; /* TEST - see title bounds */
   }
 
