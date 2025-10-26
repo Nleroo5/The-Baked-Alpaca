@@ -1640,6 +1640,7 @@ main {
   .grid-3 > .card:nth-child(3) .img-overlay-wrapper {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
+    background: lime !important; /* TEST */
   }
 
   /* Remove title top/bottom padding - OVERRIDE components.css line 417 */
@@ -1650,6 +1651,7 @@ main {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     margin-top: 0 !important;
+    background: orange !important; /* TEST */
   }
 
   /* Remove card bottom padding - OVERRIDE components.css line 394 */
