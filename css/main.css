@@ -1633,22 +1633,35 @@ main {
   /* ==================== */
 
   /* Fix spacing between card images and titles */
-  /* Cards 1 and 3 need padding-bottom removed from wrapper */
-  .card:nth-child(1) .img-overlay-wrapper,
-  .card:nth-child(3) .img-overlay-wrapper {
+  /* Cards 1 and 3 need ALL padding/margin removed */
+
+  /* Remove wrapper bottom spacing */
+  .grid-3 > .card:nth-child(1) .img-overlay-wrapper,
+  .grid-3 > .card:nth-child(3) .img-overlay-wrapper {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
 
-  .card:nth-child(1) .card-title,
-  .card:nth-child(3) .card-title {
+  /* Remove title top/bottom padding - OVERRIDE components.css line 417 */
+  .grid-3 > .card:nth-child(1) .card-title,
+  .grid-3 > .card:nth-child(3) .card-title,
+  .grid-3 > .card:nth-child(1) h3.card-title,
+  .grid-3 > .card:nth-child(3) h3.card-title {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    margin-top: 0 !important;
   }
 
-  .card:nth-child(1),
-  .card:nth-child(3) {
-    padding-bottom: 0 !important;
+  /* Remove card bottom padding - OVERRIDE components.css line 394 */
+  .grid-3 > .card:nth-child(1),
+  .grid-3 > .card:nth-child(3) {
+    padding-bottom: var(--space-3) !important; /* Keep some bottom padding */
+  }
+
+  /* Override card-img margin-bottom from components.css line 408 */
+  .grid-3 > .card:nth-child(1) .card-img,
+  .grid-3 > .card:nth-child(3) .card-img {
+    margin-bottom: 0 !important;
   }
 
   /* Card 2 is correct with just margin-bottom: 0 */
@@ -1677,22 +1690,35 @@ main {
   /* ==================== */
 
   /* HOMEPAGE CARDS - EXTRA SMALL MOBILE */
-  /* Cards 1 and 3 need padding-bottom removed from wrapper */
-  .card:nth-child(1) .img-overlay-wrapper,
-  .card:nth-child(3) .img-overlay-wrapper {
+  /* Cards 1 and 3 need ALL padding/margin removed */
+
+  /* Remove wrapper bottom spacing */
+  .grid-3 > .card:nth-child(1) .img-overlay-wrapper,
+  .grid-3 > .card:nth-child(3) .img-overlay-wrapper {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
   }
 
-  .card:nth-child(1) .card-title,
-  .card:nth-child(3) .card-title {
+  /* Remove title top/bottom padding */
+  .grid-3 > .card:nth-child(1) .card-title,
+  .grid-3 > .card:nth-child(3) .card-title,
+  .grid-3 > .card:nth-child(1) h3.card-title,
+  .grid-3 > .card:nth-child(3) h3.card-title {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
+    margin-top: 0 !important;
   }
 
-  .card:nth-child(1),
-  .card:nth-child(3) {
-    padding-bottom: 0 !important;
+  /* Remove card bottom padding */
+  .grid-3 > .card:nth-child(1),
+  .grid-3 > .card:nth-child(3) {
+    padding-bottom: var(--space-3) !important;
+  }
+
+  /* Override card-img margin-bottom */
+  .grid-3 > .card:nth-child(1) .card-img,
+  .grid-3 > .card:nth-child(3) .card-img {
+    margin-bottom: 0 !important;
   }
 
   /* Card 2 is correct with just margin-bottom: 0 */
