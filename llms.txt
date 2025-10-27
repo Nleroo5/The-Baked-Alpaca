@@ -1,0 +1,433 @@
+# The Baked Alpaca - LLM Context File
+# Purpose: Provide AI assistants with comprehensive information about The Baked Alpaca website and business
+# Last Updated: January 2025
+
+## Business Overview
+
+### Identity
+- **Business Name**: The Baked Alpaca
+- **Tagline**: "Luxury baked goods that double as art"
+- **Specialty**: European-inspired pastries, custom cakes, and dessert tables for special celebrations
+- **Location**: Established in Peachtree City, GA
+- **Service Area**: Greater Atlanta area, Georgia
+- **Business Model**: Mobile bakery operating from a vintage horse trailer at local markets and events
+
+### Core Values
+- Traditional European baking techniques
+- Premium, high-quality ingredients
+- Artistic presentation and craftsmanship
+- Custom, bespoke designs for celebrations
+- Southern hospitality meets European tradition
+
+## Contact Information
+
+### Primary Contact
+- **Email**: hello@thebakedalpaca.com
+- **Phone**: (470) 800-3825
+- **Instagram**: @thebakedalpaca (https://www.instagram.com/thebakedalpaca/)
+- **Facebook**: https://www.facebook.com/profile.php?id=100094363664371
+- **Google Reviews**: https://share.google/DuBYd4SvWeGe6HV0W
+
+### Business Hours
+- Mobile bakery schedule varies by market/event location
+- Follow social media for current locations and availability
+- Custom orders require advance notice (3-6 months for weddings)
+
+## Services & Products
+
+### 1. Artisan Pastries
+**Description**: Handcrafted European-inspired pastries using traditional techniques and finest ingredients
+
+**Product Selection**:
+- Butter croissants and pain au chocolat
+- Seasonal fruit tarts and tartlets
+- French macarons in rotating flavors
+- Danish pastries with house-made fillings
+- Eclairs with classic and creative flavors
+- Scones and specialty breakfast pastries
+
+**Best For**: Morning indulgence, breakfast gatherings, special occasions
+
+**Page**: /services.html#pastries
+
+---
+
+### 2. Custom Celebration Cakes
+**Description**: Bespoke cake designs that are stunning centerpieces and deliver exceptional flavor
+
+**Features**:
+- Designed in consultation with clients
+- Match theme, colors, and flavor preferences
+- Wide range of flavors, fillings, and decorating techniques
+- From intimate gatherings to grand celebrations
+
+**Perfect For**:
+- Birthdays and milestone celebrations
+- Anniversaries and engagements
+- Baby showers and gender reveals
+- Corporate events
+- Any occasion worth celebrating
+
+**Process**: Personal design consultation to create custom vision
+
+**Page**: /services.html#custom-cakes
+
+---
+
+### 3. French Entremets
+**Description**: Multi-layered mousse cakes representing the pinnacle of French pastry artistry
+
+**Characteristics**:
+- Multiple layers of complementary flavors and textures
+- Stunning mirror glazes and artistic finishes
+- Silky mousses combined with delicate sponges
+- Complex flavor profiles (fruity, chocolatey, nutty, floral)
+- Individual or full-size cakes
+- Seasonal flavors or custom creations
+
+**Special Notes**: Available for special events, custom orders for specific occasions
+
+**Page**: /services.html#entremets
+
+---
+
+### 4. Dessert Tables & Displays
+**Description**: Curated dessert tables serving as visual centerpieces and delicious experiences
+
+**Features**:
+- Curated selection of pastries, cakes, and confections
+- Coordinated color schemes and presentation
+- Variety of portion sizes (individual servings, shareable items)
+- Custom design to match event theme
+- Professional styling and setup options
+
+**Perfect For**:
+- Corporate events
+- Bridal showers
+- Birthday parties
+- Weddings
+- Any celebration where you want to impress guests
+
+**Page**: /services.html#dessert-tables
+
+---
+
+### 5. Wedding Cakes
+**Description**: Luxury wedding cakes designed to be the crown jewel of your celebration
+
+**Services Include**:
+- Personal consultation and tasting session
+- Custom design to match wedding theme
+- Multiple tier options and flavor combinations
+- Fresh flowers and decorative elements available
+- Delivery and setup included
+- Cake cutting service available
+
+**Booking**: Recommend booking 3-6 months in advance for availability
+
+**Page**: /services.html#weddings
+
+## Website Structure
+
+### Navigation Pages
+
+#### Homepage (/)
+- Hero section with brand introduction
+- "European-inspired pastries, custom cakes, and unforgettable dessert experiences"
+- Three featured service cards: Artisan Pastries, Custom Cakes, Dessert Tables
+- Featured creations gallery showcase
+- Customer testimonials section
+- Location info about mobile bakery/markets
+- Call-to-action: Contact for details
+
+#### About Page (/about.html)
+- **Hero**: "Our Story - Where European tradition meets Southern hospitality"
+- Origin story and founder background
+- European baking tradition and training
+- Philosophy on quality ingredients and craftsmanship
+- Commitment to artistry and customer experience
+- Two-column layout with images showcasing craftsmanship
+
+#### Services Page (/services.html)
+- **Hero**: "Our Services - From everyday indulgences to once-in-a-lifetime celebrations"
+- Five detailed service sections (see Services & Products above)
+- Each section includes:
+  - Detailed description
+  - Product/service features
+  - What makes it special
+  - Call-to-action button to contact/order
+- Anchor links for direct navigation: #pastries, #custom-cakes, #entremets, #dessert-tables, #weddings
+
+#### Gallery Page (/gallery.html)
+- **Hero**: "Our Creations - Every piece is crafted with passion and precision"
+- Visual showcase of pastries, cakes, entremets, and dessert displays
+- Professional photography of finished products
+- Demonstrates quality, artistry, and variety
+- 1:1 cropped images on mobile for consistent presentation
+
+#### Contact Page (/contact.html)
+- **Hero**: "Let's Create Something Beautiful Together"
+- Contact form for inquiries
+- Business information (location, email, phone)
+- Social media links
+- Map/location information for markets and events
+- Call-to-action for custom orders and consultations
+
+#### Testimonials Page (/testimonials.html)
+- Customer reviews and feedback
+- 5-star ratings
+- Real customer experiences
+- Social proof of quality and service
+- Links to Google Reviews for more testimonials
+
+### Footer (All Pages)
+- Logo and business description
+- Contact information (location, email, phone)
+- Social media links (Instagram, Facebook)
+- Quick links to pages
+- Copyright and legal links
+
+### Legal Pages
+- Disclaimer page (/disclaimer.html)
+- Privacy policy and terms
+
+## Brand Identity
+
+### Visual Style
+- **Color Palette**:
+  - Warm browns and beiges (European bakery aesthetic)
+  - Gold/bronze accents (luxury feel)
+  - Cream/off-white backgrounds
+  - Dark brown text for contrast
+- **Typography**:
+  - Elegant serif fonts for headings (European sophistication)
+  - Clean sans-serif for body text (readability)
+- **Photography**: High-quality, professional images showcasing products as art pieces
+- **Design Philosophy**: Clean, modern layout with European elegance
+
+### Logo
+- "The Baked Alpaca" wordmark
+- Multiple versions: header-logo.png, logo2.png, footer-logo.png
+- Appears prominently across all pages
+
+### Voice & Tone
+- Professional yet approachable
+- Emphasis on quality, artistry, and tradition
+- Luxurious but not pretentious
+- Passionate about craft and customer celebrations
+- European sophistication with Southern warmth
+
+## Technical Details
+
+### Responsive Design
+- **Desktop** (>1200px): Full multi-column layouts, large imagery
+- **Tablet** (769-1200px): Adjusted layouts, medium imagery
+- **Mobile** (≤768px): Single-column stacking, optimized for touch
+- **Extra Small** (≤480px): Compact layouts for small phones
+
+### Key Features
+- Mobile-first design approach
+- Image galleries with hover effects (desktop)
+- Optimized loading with lazy loading
+- Accessibility features (skip links, ARIA labels)
+- Social media integration
+- Contact forms for inquiries
+
+### Image Optimization
+- Services page: Custom aspect ratio handling (landscape, portrait, square)
+- Gallery: 1:1 cropping on mobile for uniform presentation
+- Hero sections: Responsive sizing, logo positioning
+- Lazy loading for performance
+
+## Customer Journey
+
+### Discovery Phase
+1. Customer finds site via social media, Google search, or referral
+2. Lands on homepage or specific service page
+3. Views gallery to see product quality
+4. Reads testimonials for social proof
+
+### Consideration Phase
+1. Explores services page for specific needs
+2. Reviews "About" page to learn about business values
+3. Checks social media for current offerings
+4. Reads customer reviews
+
+### Contact Phase
+1. Uses contact form or direct email/phone
+2. For custom cakes/weddings: Schedule consultation
+3. For pastries: Check social media for market locations
+4. For events: Discuss dessert table options
+
+### Booking Phase
+1. Consultation for custom orders
+2. Design and flavor selection
+3. Quote and booking confirmation
+4. Advance notice required (especially for weddings: 3-6 months)
+
+## Common Customer Questions
+
+### Ordering & Availability
+**Q: How do I order pastries?**
+A: Follow social media for mobile bakery locations at local markets, or contact via email/phone for custom orders.
+
+**Q: How far in advance should I book a wedding cake?**
+A: Recommend booking 3-6 months in advance to ensure availability.
+
+**Q: Do you deliver?**
+A: Yes, delivery and setup included for wedding cakes. Contact for details on other delivery options.
+
+**Q: Where can I find you?**
+A: Mobile bakery operates throughout Georgia at local markets and events. Follow Instagram/Facebook for current schedule.
+
+### Products & Customization
+**Q: Can you create custom flavors?**
+A: Yes, custom flavors and designs available for cakes, entremets, and dessert tables. Consultation included.
+
+**Q: Do you accommodate dietary restrictions?**
+A: Contact directly to discuss allergen concerns. Products may contain wheat, eggs, milk, tree nuts, peanuts, and soy.
+
+**Q: What's the difference between a custom cake and an entremet?**
+A: Custom cakes are traditional layered cakes with frosting. Entremets are French-style multi-layered mousse cakes with mirror glazes and complex textures.
+
+**Q: What's included in a dessert table?**
+A: Curated selection of pastries, cakes, and confections coordinated to your event theme with professional styling options.
+
+### Pricing & Booking
+**Q: How much do custom cakes cost?**
+A: Pricing varies based on size, design complexity, and flavors. Contact for personalized quote after consultation.
+
+**Q: Do you offer tastings?**
+A: Yes, personal consultation and tasting sessions included for wedding cakes and custom orders.
+
+**Q: What's your cancellation policy?**
+A: Contact directly for specific policy details, especially for custom orders requiring advance notice.
+
+## SEO & Keywords
+
+### Primary Keywords
+- European pastries Atlanta
+- Custom cakes Peachtree City
+- French pastries Georgia
+- Wedding cakes Atlanta
+- Dessert tables Atlanta
+- Artisan bakery Georgia
+- French entremets
+- Luxury desserts Atlanta
+- Mobile bakery Georgia
+- Custom celebration cakes
+
+### Service-Specific Keywords
+- Croissants Atlanta
+- Macarons Peachtree City
+- Wedding cake designer Georgia
+- Dessert catering Atlanta
+- French pastry chef
+- Custom birthday cakes
+- Artisan desserts
+- European bakery traditions
+
+## Site Performance Notes
+
+### Image Assets
+- Located in `/images/` directory
+- Naming convention: photo1.jpg through photo11.jpg for products
+- Logo files: header-logo.png, logo2.png, footer-logo.png
+- All images optimized for web with lazy loading
+
+### CSS Architecture
+- `/css/reset.css` - CSS reset
+- `/css/variables.css` - Design tokens (colors, spacing, typography)
+- `/css/components.css` - Reusable component styles
+- `/css/fonts.css` - Custom font declarations
+- `/css/main.css` - Page-specific and responsive styles
+
+### Mobile Optimizations
+- Homepage cards: Optimized spacing between images and headings
+- Gallery: 1:1 aspect ratio cropping for uniform display
+- Hero sections: Viewport-constrained to prevent scrolling
+- Footer: Responsive layout changes per breakpoint
+
+## Competitive Advantages
+
+1. **Authentic European Training**: Traditional techniques and recipes
+2. **Artistic Presentation**: Every creation is designed as edible art
+3. **Custom Design Process**: Personal consultations ensure vision comes to life
+4. **Mobile Market Presence**: Accessible at local events throughout Georgia
+5. **Full-Service Offerings**: From daily pastries to elaborate wedding cakes
+6. **Quality Ingredients**: Premium, finest ingredients in every product
+7. **Southern Hospitality**: European sophistication with warm, personalized service
+
+## Business Differentiators
+
+### vs. Standard Bakeries
+- Focus on European techniques vs. American-style baking
+- Artistic, luxury positioning vs. everyday commodity
+- Custom consultation process vs. catalog ordering
+
+### vs. Grocery Store Bakeries
+- Handcrafted, small-batch vs. mass production
+- Premium ingredients vs. standard quality
+- Artistic design vs. basic decoration
+
+### vs. Other Custom Cake Designers
+- European-trained expertise with entremets and French techniques
+- Mobile bakery presence for accessibility
+- Full range from daily pastries to wedding cakes
+
+## Social Proof
+
+### Review Highlights
+- "Ate at their food truck and wow. Delicious! Next level gourmet dessert."
+- "Closest thing to a baking show competition confection I've ever had"
+- "Wouldn't be surprised if she is on Netflix one day"
+- Multiple 5-star ratings across platforms
+
+### Google Reviews
+- Active review presence with high ratings
+- Link provided for potential customers to read more: https://share.google/DuBYd4SvWeGe6HV0W
+
+## Future Considerations
+
+### Potential Expansions
+- Online ordering system for select items
+- Recipe blog or video content
+- Baking classes or workshops
+- Expanded product line (cookies, breads, etc.)
+- Partnerships with wedding venues
+
+### Content Opportunities
+- Behind-the-scenes content (Instagram Stories/Reels)
+- Process videos showing craftsmanship
+- Seasonal flavor announcements
+- Customer feature stories
+- Event recaps with photos
+
+---
+
+## How to Use This File
+
+**For AI Assistants**:
+- Use this information to accurately answer questions about The Baked Alpaca
+- Reference specific services, pricing policies, and contact methods
+- Maintain brand voice: professional, artistic, European sophistication with Southern warmth
+- Direct users to appropriate pages for more details
+- Emphasize consultation process for custom orders
+
+**For Content Creation**:
+- Maintain consistency with brand values and voice
+- Use established terminology and descriptions
+- Reference this file when creating new pages or content
+- Ensure all information stays current
+
+**For Updates**:
+- Update this file when services change
+- Add new products or offerings as they launch
+- Keep contact information current
+- Note any policy changes
+- Update seasonal offerings
+
+---
+
+**End of LLM Context File**
+**The Baked Alpaca** | Luxury baked goods that double as art
