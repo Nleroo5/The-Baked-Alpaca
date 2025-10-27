@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://thebakedalpaca.com/</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services Page -->
+  <url>
+    <loc>https://thebakedalpaca.com/services.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://thebakedalpaca.com/about.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://thebakedalpaca.com/gallery.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://thebakedalpaca.com/contact.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Testimonials Page -->
+  <url>
+    <loc>https://thebakedalpaca.com/testimonials.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Disclaimer Page -->
+  <url>
+    <loc>https://thebakedalpaca.com/disclaimer.html</loc>
+    <lastmod>2025-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
+
+<!--
+INSTRUCTIONS:
+1. Upload this file to your website root directory
+2. Update the <lastmod> dates when you make significant changes to each page
+3. Submit this sitemap to Google Search Console
+4. Submit this sitemap to Bing Webmaster Tools
+5. Update the sitemap URL in your robots.txt file (already done)
+
+PRIORITY GUIDE:
+- 1.0 = Most important (homepage)
+- 0.9 = Very important (main conversion pages like services, contact)
+- 0.8 = Important (about, gallery)
+- 0.7 = Moderate (testimonials)
+- 0.3-0.5 = Low priority (legal pages, etc.)
+
+CHANGEFREQ GUIDE:
+- daily = Content changes every day
+- weekly = Content changes weekly (homepage, gallery if frequently updated)
+- monthly = Content changes monthly (most pages)
+- yearly = Rarely changes (legal pages)
+-->

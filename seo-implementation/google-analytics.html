@@ -1,0 +1,219 @@
+<!-- ================================================ -->
+<!-- GOOGLE ANALYTICS 4 (GA4) SETUP -->
+<!-- Add this code to the <head> section of ALL pages -->
+<!-- Your GA4 Measurement ID: G-J085S2KE6W -->
+<!-- ================================================ -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J085S2KE6W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J085S2KE6W');
+</script>
+
+
+<!-- ================================================ -->
+<!-- HOW TO GET YOUR GA4 MEASUREMENT ID -->
+<!-- ================================================ -->
+
+<!--
+STEP 1: Create a Google Analytics Account
+1. Go to https://analytics.google.com/
+2. Sign in with your Google account
+3. Click "Start measuring"
+4. Enter account name: "The Baked Alpaca"
+5. Configure data sharing settings
+6. Click "Next"
+
+STEP 2: Create a Property
+1. Property name: "The Baked Alpaca Website"
+2. Reporting time zone: "(GMT-05:00) Eastern Time"
+3. Currency: "US Dollar ($)"
+4. Click "Next"
+
+STEP 3: Configure Business Information
+1. Industry category: "Food & Drink"
+2. Business size: "Small" (1-10 employees)
+3. How you plan to use Analytics: Select relevant options
+4. Click "Create"
+
+STEP 4: Set Up Data Stream
+1. Choose platform: "Web"
+2. Website URL: "https://thebakedalpaca.com"
+3. Stream name: "The Baked Alpaca Website"
+4. Click "Create stream"
+
+STEP 5: Get Your Measurement ID
+1. After creating the stream, you'll see your Measurement ID
+2. It looks like: G-XXXXXXXXXX
+3. Copy this ID
+4. Replace "YOUR_GA4_MEASUREMENT_ID" in the code above with this ID
+
+STEP 6: Verify Installation
+1. Add the code to your website
+2. Visit your website
+3. In Google Analytics, go to Reports > Realtime
+4. You should see your visit appear in real-time
+-->
+
+
+<!-- ================================================ -->
+<!-- ENHANCED TRACKING (OPTIONAL) -->
+<!-- ================================================ -->
+
+<!-- Track button clicks (add to your existing gtag script): -->
+<script>
+  // Track Contact button clicks
+  document.addEventListener('DOMContentLoaded', function() {
+    // Track all "Contact Us" button clicks
+    const contactButtons = document.querySelectorAll('a[href*="contact"]');
+    contactButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        gtag('event', 'click', {
+          'event_category': 'Contact',
+          'event_label': 'Contact Button',
+          'value': 1
+        });
+      });
+    });
+
+    // Track phone number clicks
+    const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+    phoneLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        gtag('event', 'click', {
+          'event_category': 'Contact',
+          'event_label': 'Phone Number',
+          'value': 1
+        });
+      });
+    });
+
+    // Track email clicks
+    const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+    emailLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        gtag('event', 'click', {
+          'event_category': 'Contact',
+          'event_label': 'Email Address',
+          'value': 1
+        });
+      });
+    });
+
+    // Track gallery image clicks
+    const galleryImages = document.querySelectorAll('.gallery img');
+    galleryImages.forEach(img => {
+      img.addEventListener('click', function() {
+        gtag('event', 'click', {
+          'event_category': 'Gallery',
+          'event_label': 'Image View',
+          'value': 1
+        });
+      });
+    });
+
+    // Track social media link clicks
+    const socialLinks = document.querySelectorAll('a[href*="instagram"], a[href*="facebook"]');
+    socialLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        const platform = link.href.includes('instagram') ? 'Instagram' : 'Facebook';
+        gtag('event', 'click', {
+          'event_category': 'Social',
+          'event_label': platform,
+          'value': 1
+        });
+      });
+    });
+  });
+</script>
+
+
+<!-- ================================================ -->
+<!-- GOOGLE SEARCH CONSOLE VERIFICATION -->
+<!-- ================================================ -->
+
+<!-- Add this meta tag to verify ownership in Google Search Console -->
+<!-- Replace YOUR_VERIFICATION_CODE with the actual code from Search Console -->
+<meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+
+<!--
+HOW TO GET YOUR VERIFICATION CODE:
+1. Go to https://search.google.com/search-console
+2. Click "Add property"
+3. Enter your website URL: https://thebakedalpaca.com
+4. Choose verification method: "HTML tag"
+5. Copy the content value from the meta tag they provide
+6. Replace YOUR_VERIFICATION_CODE above with that value
+7. Add this to your homepage <head> section
+8. Go back to Search Console and click "Verify"
+-->
+
+
+<!-- ================================================ -->
+<!-- IMPORTANT SETUP TASKS AFTER INSTALLING GA4 -->
+<!-- ================================================ -->
+
+<!--
+1. LINK GOOGLE ANALYTICS TO GOOGLE SEARCH CONSOLE:
+   - In GA4, go to Admin > Property Settings > Product Links
+   - Click "Link" under Search Console
+   - Select your Search Console property
+   - This connects your search data with your analytics
+
+2. SET UP KEY EVENTS (CONVERSIONS):
+   - In GA4, go to Admin > Events
+   - Mark these as key events:
+     * Contact form submissions
+     * Phone number clicks
+     * Email clicks
+     * Button clicks (Contact Us, Schedule Consultation)
+
+3. CREATE CUSTOM REPORTS:
+   - Popular pages report
+   - Traffic sources report
+   - Location report (where visitors are from)
+   - Device report (mobile vs desktop)
+
+4. SET UP AUDIENCES:
+   - Engaged visitors (spent 30+ seconds)
+   - Wedding cake shoppers (visited wedding cake page)
+   - Return visitors
+
+5. ENABLE GOOGLE SIGNALS:
+   - In GA4, go to Admin > Data Collection
+   - Enable Google signals
+   - This provides better demographic data
+
+6. SUBMIT YOUR SITEMAP TO GOOGLE SEARCH CONSOLE:
+   - Go to Search Console
+   - Click "Sitemaps" in left menu
+   - Add: https://thebakedalpaca.com/sitemap.xml
+   - Click "Submit"
+-->
+
+
+<!-- ================================================ -->
+<!-- PRIVACY POLICY REQUIREMENT -->
+<!-- ================================================ -->
+
+<!--
+IMPORTANT: Google Analytics requires you to have a Privacy Policy.
+
+Add a link to your privacy policy in the footer of all pages:
+<a href="/privacy.html">Privacy Policy</a>
+
+Your privacy policy should mention:
+- That you use Google Analytics
+- What data is collected (cookies, IP addresses, pageviews)
+- How the data is used (to improve website experience)
+- That users can opt out using browser settings or extensions
+- How to contact you with privacy questions
+
+You can use a free privacy policy generator:
+- https://www.termsfeed.com/privacy-policy-generator/
+- https://www.freeprivacypolicy.com/
+-->

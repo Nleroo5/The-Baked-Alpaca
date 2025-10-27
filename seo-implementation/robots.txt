@@ -1,0 +1,22 @@
+# robots.txt for The Baked Alpaca
+# Place this file in the root directory of your website
+
+User-agent: *
+Allow: /
+
+# Disallow admin/private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all images to be indexed
+Allow: /images/
+
+# Allow CSS and JS to be crawled for better rendering
+Allow: /css/
+Allow: /js/
+
+# Sitemap location
+Sitemap: https://thebakedalpaca.com/sitemap.xml
+
+# Crawl-delay (optional - only add if needed)
+# Crawl-delay: 10
